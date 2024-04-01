@@ -31,7 +31,10 @@ export const SocialMedia = () => {
   const fetchInstagramFeed = async () => {
     try {
       const response = await fetch(
-        `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&access_token=${node.env.NEXT_PUBLIC_INSTAGRAM_APP_SECRET}`,
+        `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&access_token=${
+          // node.env.NEXT_PUBLIC_INSTAGRAM_APP_SECRET
+          ""
+        }`,
       );
       if (response.ok) {
         const data = await response.json();
