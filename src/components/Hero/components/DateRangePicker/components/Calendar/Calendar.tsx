@@ -4,7 +4,7 @@ import { useCalendar, useLocale } from "react-aria";
 import { createCalendar } from "@internationalized/date";
 import { CalendarButton } from "./components/CalendarButton/CalendarButton";
 import { CalendarGrid } from "./components/CalendarGrid/CalendarGrid";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/outline";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 export function Calendar(props) {
   let { locale } = useLocale();

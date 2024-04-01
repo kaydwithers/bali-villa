@@ -10,6 +10,7 @@ import { CalendarDialog } from "./components/CalendarDialog/CalendarDialog";
 import { CalendarPopover } from "./components/CalendarPopover/CalendarPopover";
 import { DatePickerFieldButton } from "./components/DatePickerButton/DatePickerButton";
 import { CalendarIcon, ExclamationCircleIcon } from "@heroicons/react/24/solid";
+import { RangeCalendar } from "./components/RangeCalendar/RangeCalendar";
 
 interface IDateRangePicker {
   label: string;

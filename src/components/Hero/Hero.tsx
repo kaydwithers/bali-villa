@@ -32,10 +32,6 @@ export const Hero = () => {
 
               <Button>Make booking</Button>
             </div>
-
-            {/* <div className="">
-              <DateRangePicker label="Test" minValue={new Date()} />
-            </div> */}
           </div>
         </div>
       </div>
