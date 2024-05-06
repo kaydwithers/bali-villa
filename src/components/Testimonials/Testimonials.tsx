@@ -11,17 +11,23 @@ interface ITestimonials {
 const testimonials: ITestimonials[] = [
   {
     id: "1",
-    contents: ["The best villa in Bali."],
+    contents: [
+      "We loved our time at this private villa—it’s a peaceful hideaway with a small pool that’s just right for a refreshing dip. If you’re after relaxation and some alone time, this place nails it with attentive staff making sure you have a wonderful stay.",
+    ],
     stars: 5,
   },
   {
     id: "2",
-    contents: ["Shplendid"],
+    contents: [
+      "This villa is all about luxury in a cozy setting—the small pool is perfect for couples or small groups to enjoy. The service is top-notch, and you'll feel pampered from the moment you arrive.",
+    ],
     stars: 5,
   },
   {
     id: "3",
-    contents: ["Awesome!"],
+    contents: [
+      "Picture a lovely villa with a small pool, where you can soak up Bali's vibes in peace. The staff here are amazing, adding that extra touch to make your stay special. It's a definite thumbs-up for anyone seeking a cozy and welcoming Bali experience.",
+    ],
     stars: 4,
   },
 ];
@@ -39,7 +45,7 @@ export const Testimonials = () => {
               key={testimonial.id}
             >
               {testimonial.contents.map((item, index) => (
-                <p className="text-xl" key={index}>
+                <p className="max-w-prose h-full" key={index}>
                   {item}
                 </p>
               ))}

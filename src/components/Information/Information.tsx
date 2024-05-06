@@ -20,12 +20,22 @@ const information: IInformation[] = [
   {
     id: "2",
     heading: "Things to see",
-    contents: ["The beach."],
+    contents: [
+      "Padang Padang beach.",
+      "Suluban Beach (Perfect for surfing)",
+      "Dreamland Beach",
+      "Bingin Beach",
+    ],
   },
   {
     id: "3",
+    heading: "Restaurants and bars",
+    contents: ["The best seafood can be found at the fish market in Jimbaran"],
+  },
+  {
+    id: "4",
     heading: "Amenities",
-    contents: ["Coffee machine.", "Pool.", "Television."],
+    contents: ["Internet", "Coffee machine", "Pool", "Television with Netflix"],
   },
 ];
 
@@ -57,7 +67,9 @@ export const Information = () => {
                     <>
                       <Disclosure.Button className="pt-12 pb-6 text-left">
                         <div className="flex justify-between">
-                          <h4 className="text-2xl">{item.heading}</h4>
+                          <h4 className="lg:text-xl tracking-[0.2em] font-semibold uppercase">
+                            {item.heading}
+                          </h4>
 
                           {open ? (
                             <MinusIcon className="w-6 h-6" />
@@ -75,9 +87,11 @@ export const Information = () => {
                         leaveFrom="transform scale-100 opacity-100"
                         leaveTo="transform scale-95 opacity-0"
                       >
-                        <Disclosure.Panel className="text-white/70 pb-8">
+                        <Disclosure.Panel className="flex flex-col text-white/70 pb-8 gap-y-2">
                           {item.contents.map((text, index) => (
-                            <p key={index}>{text}</p>
+                            <p className="max-w-prose" key={index}>
+                              {text}
+                            </p>
                           ))}
                         </Disclosure.Panel>
                       </Transition>

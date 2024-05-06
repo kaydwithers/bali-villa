@@ -24,9 +24,9 @@ export const Footer = () => {
                 href="https://maps.app.goo.gl/hNvptmtVh8ZmPg3w6"
                 target="_blank"
               >
-                Jl. Villa Airis Gg. <br />
-                Bunga Mekar No.3, <br />
-                unggasan, Bali{" "}
+                Jl. Villa Airis. <br />
+                GG Bunga Mekar No.3, <br />
+                Unggasan — Pecatu, Uluwatu{" "}
                 <ArrowTopRightOnSquareIcon
                   className="inline-block h-4 w-4"
                   title="Opens in new tab"
