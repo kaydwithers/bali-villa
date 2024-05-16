@@ -61,7 +61,7 @@ export const SocialMedia = () => {
         <p className="">
           <a
             className="flex items-center gap-x-4"
-            href="https://www.instagram.com/yourinstagramhandle/"
+            href="https://www.instagram.com/nirav.bali/"
           >
             <span className="w-8 h-8">
               <svg viewBox="0 0 256 256">
