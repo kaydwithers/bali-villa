@@ -42,7 +42,7 @@ export const Header = () => {
       <div className="flex items-center justify-between w-full">
         <div className="">
           <h1 className="text-xl lg:text-2xl tracking-[0.2em] font-semibold uppercase">
-            Nirav
+            Nirav Villa
           </h1>
         </div>
 

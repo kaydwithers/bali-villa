@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
 import { PlusIcon, MinusIcon } from "@heroicons/react/24/solid";
 import { Disclosure, Transition } from "@headlessui/react";
 import { Layout } from "../Layout/Layout";
@@ -8,34 +9,79 @@ import { Layout } from "../Layout/Layout";
 interface IInformation {
   id: string;
   heading: string;
-  contents: string[];
+  contents: React.ReactNode;
 }
 
 const information: IInformation[] = [
   {
     id: "1",
     heading: "Price",
-    contents: ["From $200 per night."],
+    contents: <p className="max-w-prose">From $200 per night</p>,
   },
   {
     id: "2",
     heading: "Things to see",
-    contents: [
-      "Padang Padang beach.",
-      "Suluban Beach (Perfect for surfing)",
-      "Dreamland Beach",
-      "Bingin Beach",
-    ],
+    contents: (
+      <ul className="flex flex-col gap-y-2">
+        <li>
+          <a className="flex items-center gap-x-1" href="" target="_blank">
+            Padang Padang beach
+            <ArrowTopRightOnSquareIcon
+              className="inline-block h-4 w-4"
+              title="Opens in new tab"
+            />
+          </a>
+        </li>
+        <li>
+          <a className="flex items-center gap-x-1" href="" target="_blank">
+            Suluban Beach (Perfect for surfing)
+            <ArrowTopRightOnSquareIcon
+              className="inline-block h-4 w-4"
+              title="Opens in new tab"
+            />
+          </a>
+        </li>
+        <li>
+          <a className="flex items-center gap-x-1" href="" target="_blank">
+            Dreamland Beach
+            <ArrowTopRightOnSquareIcon
+              className="inline-block h-4 w-4"
+              title="Opens in new tab"
+            />
+          </a>
+        </li>
+        <li>
+          <a className="flex items-center gap-x-1" href="" target="_blank">
+            Bingin Beach
+            <ArrowTopRightOnSquareIcon
+              className="inline-block h-4 w-4"
+              title="Opens in new tab"
+            />
+          </a>
+        </li>
+      </ul>
+    ),
   },
   {
     id: "3",
     heading: "Restaurants and bars",
-    contents: ["The best seafood can be found at the fish market in Jimbaran"],
+    contents: (
+      <p className="max-w-prose">
+        The best seafood can be found at the fish market in Jimbaran
+      </p>
+    ),
   },
   {
     id: "4",
     heading: "Amenities",
-    contents: ["Internet", "Coffee machine", "Pool", "Television with Netflix"],
+    contents: (
+      <ul className="flex flex-col gap-y-2">
+        <li>Internet</li>
+        <li>Coffee machine</li>
+        <li>Pool</li>
+        <li>Television with Netflix</li>
+      </ul>
+    ),
   },
 ];
 
@@ -88,11 +134,7 @@ export const Information = () => {
                         leaveTo="transform scale-95 opacity-0"
                       >
                         <Disclosure.Panel className="flex flex-col text-white/70 pb-8 gap-y-2">
-                          {item.contents.map((text, index) => (
-                            <p className="max-w-prose" key={index}>
-                              {text}
-                            </p>
-                          ))}
+                          {item.contents}
                         </Disclosure.Panel>
                       </Transition>
                     </>

@@ -54,24 +54,11 @@ export const SocialMedia = () => {
   return (
     <Layout id="social-media">
       <div className="flex flex-col gap-y-8">
-        <Heading>Social media</Heading>
+        <div className="sr-only">
+          <Heading>Social media</Heading>
+        </div>
 
-        <ul className="grid grid-cols-3">
-          {mockPosts.map((post) => (
-            <Image
-              className="w-full h-full object-cover aspect-square"
-              key={post.id}
-              src={post.media_url}
-              alt={post.caption}
-              height="0"
-              width="0"
-              sizes="30vw"
-              priority
-            />
-          ))}
-        </ul>
-
-        <p>
+        <p className="">
           <a
             className="flex items-center gap-x-4"
             href="https://www.instagram.com/yourinstagramhandle/"
@@ -89,6 +76,21 @@ export const SocialMedia = () => {
             Follow Us on Instagram
           </a>
         </p>
+
+        <ul className="grid grid-cols-3">
+          {mockPosts.map((post) => (
+            <Image
+              className="w-full h-full object-cover aspect-square"
+              key={post.id}
+              src={post.media_url}
+              alt={post.caption}
+              height="0"
+              width="0"
+              sizes="30vw"
+              priority
+            />
+          ))}
+        </ul>
       </div>
     </Layout>
   );

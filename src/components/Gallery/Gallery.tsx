@@ -68,25 +68,29 @@ export const Gallery = () => {
   return (
     <>
       <Layout id="gallery">
-        <Heading>Gallery</Heading>
+        <div className="sr-only">
+          <Heading>Gallery</Heading>
+        </div>
 
         <MobileOverflow>
           <ul className="grid gap-6 lg:gap-12 grid-cols-6 lg:grid-cols-3 w-[345vw] lg:w-auto">
             {mockMedia.map((item) => (
               <button
-                className="aspect-square"
+                className="aspect-square group"
                 key={item.id}
                 onClick={handleModal}
               >
-                <Image
-                  className="w-full h-full object-cover aspect-square mb-4"
-                  src={item.media_url}
-                  alt={item.caption}
-                  height="0"
-                  width="0"
-                  sizes="30vw"
-                  priority
-                />
+                <div className="overflow-hidden mb-4">
+                  <Image
+                    className="w-full h-full object-cover aspect-square group-hover:scale-110 duration-[350ms]"
+                    src={item.media_url}
+                    alt={item.caption}
+                    height="0"
+                    width="0"
+                    sizes="30vw"
+                    priority
+                  />
+                </div>
 
                 <div className="text-center">
                   <p>{item.text}</p>
