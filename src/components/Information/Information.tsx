@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
+import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { PlusIcon, MinusIcon } from "@heroicons/react/24/solid";
 import { Disclosure, Transition } from "@headlessui/react";
 import { Layout } from "../Layout/Layout";
@@ -16,7 +16,16 @@ const information: IInformation[] = [
   {
     id: "1",
     heading: "Price",
-    contents: <p className="max-w-prose">From $200 per night</p>,
+    contents: (
+      <>
+        <p className="max-w-prose">
+          2 bedroom villa from 2,800,000 IDR per night.
+        </p>
+        <p className="max-w-prose">
+          1 bedroom villa from 2,500,000 IDR per night.
+        </p>
+      </>
+    ),
   },
   {
     id: "2",
@@ -26,7 +35,7 @@ const information: IInformation[] = [
         <li>
           <a className="flex items-center gap-x-1" href="" target="_blank">
             Padang Padang beach
-            <ArrowTopRightOnSquareIcon
+            <ArrowUpRightIcon
               className="inline-block h-4 w-4"
               title="Opens in new tab"
             />
@@ -35,7 +44,7 @@ const information: IInformation[] = [
         <li>
           <a className="flex items-center gap-x-1" href="" target="_blank">
             Suluban Beach (Perfect for surfing)
-            <ArrowTopRightOnSquareIcon
+            <ArrowUpRightIcon
               className="inline-block h-4 w-4"
               title="Opens in new tab"
             />
@@ -44,7 +53,7 @@ const information: IInformation[] = [
         <li>
           <a className="flex items-center gap-x-1" href="" target="_blank">
             Dreamland Beach
-            <ArrowTopRightOnSquareIcon
+            <ArrowUpRightIcon
               className="inline-block h-4 w-4"
               title="Opens in new tab"
             />
@@ -53,7 +62,7 @@ const information: IInformation[] = [
         <li>
           <a className="flex items-center gap-x-1" href="" target="_blank">
             Bingin Beach
-            <ArrowTopRightOnSquareIcon
+            <ArrowUpRightIcon
               className="inline-block h-4 w-4"
               title="Opens in new tab"
             />

@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/solid";
+import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import { Layout } from "../Layout/Layout";
 import { menuItems } from "../Header/Header";
 
@@ -27,7 +27,7 @@ export const Footer = () => {
                 Jl. Villa Airis. <br />
                 GG Bunga Mekar No.3, <br />
                 Unggasan — Pecatu, Uluwatu{" "}
-                <ArrowTopRightOnSquareIcon
+                <ArrowUpRightIcon
                   className="inline-block h-4 w-4"
                   title="Opens in new tab"
                 />
