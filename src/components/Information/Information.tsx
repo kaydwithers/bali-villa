@@ -110,7 +110,7 @@ export const Information = () => {
       </div>
 
       <div className="flex flex-1">
-        <Layout>
+        <Layout id="about">
           <div className="flex flex-col w-full">
             {information.map((item) => (
               <div
