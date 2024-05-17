@@ -2,8 +2,8 @@ import { ReactNode } from "react";
 
 interface IButton {
   children: ReactNode;
-  href: string;
-  isExternal: boolean;
+  href?: string;
+  isExternal?: boolean;
   type?: "submit";
 }
 
