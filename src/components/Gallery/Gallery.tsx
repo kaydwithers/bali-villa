@@ -18,37 +18,37 @@ const mockMedia: IMockPost[] = [
   {
     id: "01",
     caption: "",
-    media_url: "/images/gallery/pool.jpg",
+    media_url: "/images/gallery/pool.JPG",
     text: "Pool",
   },
   {
     id: "02",
     caption: "",
-    media_url: "/images/gallery/lounge.jpg",
+    media_url: "/images/gallery/lounge.JPG",
     text: "Lounge room",
   },
   {
     id: "03",
     caption: "",
-    media_url: "/images/gallery/kitchen.jpg",
+    media_url: "/images/gallery/kitchen.JPG",
     text: "Kitchen",
   },
   {
     id: "04",
     caption: "",
-    media_url: "/images/gallery/bedroom.jpg",
+    media_url: "/images/gallery/bedroom.JPG",
     text: "Bedroom",
   },
   {
     id: "04",
     caption: "",
-    media_url: "/images/gallery/dining.jpg",
+    media_url: "/images/gallery/dining.JPG",
     text: "Dining area",
   },
   {
     id: "05",
     caption: "",
-    media_url: "/images/gallery/bathroom.jpg",
+    media_url: "/images/gallery/bathroom.JPG",
     text: "Bathroom",
   },
 ];

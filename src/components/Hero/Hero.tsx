@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className="relative">
         <Image
           className="w-full h-[60vh] object-cover"
-          src="/images/hero.jpg"
+          src="/images/hero.JPG"
           alt="Bali Villa"
           height="0"
           width="0"
