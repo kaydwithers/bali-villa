@@ -8,7 +8,7 @@ import { Modal } from "../Modal/Modal";
 import { useState } from "react";
 
 interface IMockPost {
-  id: string;
+  id: number;
   caption: string;
   media_url: string;
   text: string;
@@ -16,37 +16,37 @@ interface IMockPost {
 
 const mockMedia: IMockPost[] = [
   {
-    id: "01",
+    id: 0,
     caption: "",
     media_url: "/images/gallery/pool.JPG",
     text: "Pool",
   },
   {
-    id: "02",
+    id: 1,
     caption: "",
     media_url: "/images/gallery/lounge.JPG",
     text: "Lounge room",
   },
   {
-    id: "03",
+    id: 2,
     caption: "",
     media_url: "/images/gallery/kitchen.JPG",
     text: "Kitchen",
   },
   {
-    id: "04",
+    id: 3,
     caption: "",
     media_url: "/images/gallery/bedroom.JPG",
     text: "Bedroom",
   },
   {
-    id: "04",
+    id: 4,
     caption: "",
     media_url: "/images/gallery/dining.JPG",
     text: "Dining area",
   },
   {
-    id: "05",
+    id: 5,
     caption: "",
     media_url: "/images/gallery/bathroom.JPG",
     text: "Bathroom",
@@ -55,8 +55,10 @@ const mockMedia: IMockPost[] = [
 
 export const Gallery = () => {
   let [isModalOpen, setIsModalOpen] = useState(false);
+  let [activeMedia, setActiveMedia] = useState(mockMedia[0]);
 
-  const handleModal = () => {
+  const handleModal = (id: number) => {
+    setActiveMedia(mockMedia[id]);
     setIsModalOpen(true);
   };
 
@@ -73,11 +75,11 @@ export const Gallery = () => {
               <button
                 className="aspect-square group"
                 key={item.id}
-                onClick={handleModal}
+                onClick={() => handleModal(item.id)}
               >
-                <div className="overflow-hidden mb-4">
+                <div className="overflow-hidden rounded-xl mb-4">
                   <Image
-                    className="w-full h-full object-cover aspect-square group-hover:scale-105 duration-[350ms] rounded-xl"
+                    className="w-full h-full object-cover aspect-square group-hover:scale-105 duration-[350ms]"
                     src={item.media_url}
                     alt={item.caption}
                     height="0"
@@ -97,7 +99,15 @@ export const Gallery = () => {
       </Layout>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        Test
+        <Image
+          className="w-full h-full object-cover"
+          src={activeMedia.media_url}
+          alt={activeMedia.caption}
+          height="0"
+          width="0"
+          sizes="100vw"
+          priority
+        />
       </Modal>
     </>
   );

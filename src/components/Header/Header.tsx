@@ -128,7 +128,7 @@ export const Header = () => {
                               >
                                 <span className="sr-only">Close panel</span>
                                 <XMarkIcon
-                                  className="h-8 w-8"
+                                  className="h-6 w-6"
                                   aria-hidden="true"
                                 />
                               </button>

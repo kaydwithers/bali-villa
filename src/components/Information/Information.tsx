@@ -96,8 +96,8 @@ const information: IInformation[] = [
 
 export const Information = () => {
   return (
-    <div className="flex h-screen flex-col md:flex-row">
-      <div className="h-full w-full lg:w-[50vw]">
+    <div className="flex h-auto lg:h-screen flex-col md:flex-row">
+      <div className="h-96 lg:h-full w-full lg:w-[50vw]">
         <Image
           className="w-full h-full object-cover"
           src="/images/information.JPG"
