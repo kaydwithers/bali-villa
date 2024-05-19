@@ -100,7 +100,7 @@ export const Gallery = () => {
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <Image
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover aspect-auto"
           src={activeMedia.media_url}
           alt={activeMedia.caption}
           height="0"
