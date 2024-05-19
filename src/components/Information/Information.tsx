@@ -101,7 +101,7 @@ export const Information = () => {
         <Image
           className="w-full h-full object-cover"
           src="/images/information.JPG"
-          alt="Bali Villa"
+          alt="Luxury pool at Nirav Villa in Bali."
           height="0"
           width="0"
           sizes="50vw"

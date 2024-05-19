@@ -17,37 +17,37 @@ interface IMockPost {
 const mockMedia: IMockPost[] = [
   {
     id: 0,
-    caption: "",
+    caption: "Luxury pool at Nirav Villa in Bali.",
     media_url: "/images/gallery/pool.JPG",
     text: "Pool",
   },
   {
     id: 1,
-    caption: "",
+    caption: "Luxury lounge room with Netflix at Nirav Villa in Bali.",
     media_url: "/images/gallery/lounge.JPG",
     text: "Lounge room",
   },
   {
     id: 2,
-    caption: "",
+    caption: "Luxury kitchen with many amenities at Nirav Villa in Bali.",
     media_url: "/images/gallery/kitchen.JPG",
     text: "Kitchen",
   },
   {
     id: 3,
-    caption: "",
+    caption: "Luxury comfortable bedroom at Nirav Villa in Bali.",
     media_url: "/images/gallery/bedroom.JPG",
     text: "Bedroom",
   },
   {
     id: 4,
-    caption: "",
+    caption: "Luxury dining area at Nirav Villa in Bali.",
     media_url: "/images/gallery/dining.JPG",
     text: "Dining area",
   },
   {
     id: 5,
-    caption: "",
+    caption: "Luxury bathroom at Nirav Villa in Bali.",
     media_url: "/images/gallery/bathroom.JPG",
     text: "Bathroom",
   },
