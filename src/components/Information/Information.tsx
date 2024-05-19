@@ -100,7 +100,7 @@ export const Information = () => {
       <div className="h-full w-full lg:w-[50vw]">
         <Image
           className="w-full h-full object-cover"
-          src="/hero.jpeg"
+          src="/images/information.jpg"
           alt="Bali Villa"
           height="0"
           width="0"

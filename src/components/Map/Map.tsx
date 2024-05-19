@@ -41,5 +41,5 @@ export const Map = () => {
     initMap();
   }, []);
 
-  return <div className="w-full h-[50vh]" ref={mapRef} id="map"></div>;
+  return <div className="w-full h-[60vh]" ref={mapRef} id="map"></div>;
 };

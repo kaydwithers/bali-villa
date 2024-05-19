@@ -15,46 +15,41 @@ interface IMockPost {
 }
 
 const mockMedia: IMockPost[] = [
-  // { id: "01", caption: "", media_url: "/instagram/bali-villa-01.jpg", text: "" },
-  // { id: "02", caption: "", media_url: "/instagram/bali-villa-02.jpg", text: "" },
-  // { id: "03", caption: "", media_url: "/instagram/bali-villa-03.jpg", text: "" },
-  // { id: "04", caption: "", media_url: "/instagram/bali-villa-04.jpg", text: "" },
   {
-    id: "05",
+    id: "01",
     caption: "",
-    media_url: "/instagram/bali-villa-05.jpg",
-    text: "Stunning view",
-  },
-  {
-    id: "06",
-    caption: "",
-    media_url: "/instagram/bali-villa-06.jpg",
+    media_url: "/images/gallery/pool.jpg",
     text: "Pool",
   },
   {
-    id: "07",
+    id: "02",
     caption: "",
-    media_url: "/instagram/bali-villa-07.jpg",
-    text: "Air conditioner",
+    media_url: "/images/gallery/lounge.jpg",
+    text: "Lounge room",
   },
-  // { id: "08", caption: "", media_url: "/instagram/bali-villa-08.jpg", text: "" },
   {
-    id: "09",
+    id: "03",
     caption: "",
-    media_url: "/instagram/bali-villa-09.jpg",
+    media_url: "/images/gallery/kitchen.jpg",
     text: "Kitchen",
   },
   {
-    id: "10",
+    id: "04",
     caption: "",
-    media_url: "/instagram/bali-villa-10.jpg",
-    text: "Bar",
+    media_url: "/images/gallery/bedroom.jpg",
+    text: "Bedroom",
   },
   {
-    id: "11",
+    id: "04",
     caption: "",
-    media_url: "/instagram/bali-villa-11.jpg",
-    text: "Comfortable bedrooms",
+    media_url: "/images/gallery/dining.jpg",
+    text: "Dining area",
+  },
+  {
+    id: "05",
+    caption: "",
+    media_url: "/images/gallery/bathroom.jpg",
+    text: "Bathroom",
   },
 ];
 
@@ -82,7 +77,7 @@ export const Gallery = () => {
               >
                 <div className="overflow-hidden mb-4">
                   <Image
-                    className="w-full h-full object-cover aspect-square group-hover:scale-110 duration-[350ms]"
+                    className="w-full h-full object-cover aspect-square group-hover:scale-105 duration-[350ms] rounded-xl"
                     src={item.media_url}
                     alt={item.caption}
                     height="0"
