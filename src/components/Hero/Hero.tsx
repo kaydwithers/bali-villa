@@ -9,7 +9,7 @@ export const Hero = () => {
         <Image
           className="w-full h-[60vh] object-cover"
           src="/images/hero.JPG"
-          alt="Luxury lounge room with Netflix and pool at Nirav Villa in Bali."
+          alt="Luxury lounge room with Netflix and pool at Nirav Villa in Uluwatu, Bali."
           height="0"
           width="0"
           sizes="100vw"

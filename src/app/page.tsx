@@ -11,9 +11,9 @@ import { Testimonials } from "../components/Testimonials/Testimonials";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Luxury Villa in Bali - Nirav",
+  title: "Luxury Villa in Uluwatu, Bali - Nirav",
   description:
-    "Experience luxury at Nirav Villa, a beautiful villa in Bali with modern amenities.",
+    "Experience luxury at Nirav Villa, a beautiful villa in Uluwatu, Bali with modern amenities.",
 };
 
 export default function Home() {
