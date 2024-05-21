@@ -113,7 +113,7 @@ export const Header = () => {
                     leaveTo="-translate-x-full"
                   >
                     <div className="pointer-events-auto w-screen max-w-md">
-                      <div className="flex h-full flex-col overflow-y-scroll bg-black py-6 shadow-xl text-black">
+                      <div className="flex h-full flex-col overflow-y-scroll bg-primary py-6 shadow-xl">
                         <div className="px-6">
                           <div className="flex items-start justify-between">
                             <Dialog.Title className="text-xl lg:text-2xl tracking-[0.2em] font-semibold uppercase">

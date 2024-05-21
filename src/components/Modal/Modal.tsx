@@ -36,11 +36,11 @@ export const Modal = ({ children, isOpen, onClose }: IModal) => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full relative max-w-screen-2xl transform overflow-hidden text-black rounded-2xl bg-white text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full relative max-w-screen-2xl transform overflow-hidden bg-primary rounded-2xl text-left align-middle shadow-xl transition-all">
                   <div className="absolute right-0 top-0 mr-4 mt-4">
                     <button
                       type="button"
-                      className="bg-white rounded-full p-2"
+                      className="bg-white text-black rounded-full p-2"
                       onClick={onClose}
                     >
                       <span className="sr-only">Close dialog</span>
