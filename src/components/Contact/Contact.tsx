@@ -14,7 +14,7 @@ export const Contact = () => {
           <form>
             <div className="space-y-12">
               <div className="border-b border-gray-900/10 pb-12">
-                <div className="mt-10 flex flex-col gap-y-12">
+                <div className="flex flex-col gap-y-12">
                   <Input
                     label="Name"
                     name="name"
