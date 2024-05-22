@@ -12,7 +12,7 @@ export const Footer = () => {
           <div className="flex flex-col lg:flex-row gap-x-12 gap-y-6">
             {menuItems.map((item) => (
               <p className="" key={item.id}>
-                <a href={item.href}>{item.text}</a>
+                <a href={item.href ? item.href : `#${item.id}`}>{item.text}</a>
               </p>
             ))}
           </div>
