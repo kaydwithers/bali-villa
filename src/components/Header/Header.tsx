@@ -9,6 +9,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Button } from "../Button/Button";
 import { Fragment, useState } from "react";
 import { Layout } from "../Layout/Layout";
+import { Logo } from "../Logo/Logo";
 
 interface IMenuItems {
   id: string;
@@ -47,9 +48,7 @@ export const Header = () => {
     <Layout classNameOverride="!py-4 lg:!py-8" id="header">
       <div className="flex items-center justify-between w-full">
         <div className="">
-          <h1 className="text-xl lg:text-2xl tracking-[0.2em] font-semibold uppercase">
-            Nirav
-          </h1>
+          <Logo></Logo>
         </div>
 
         <div className="hidden lg:flex gap-x-14 items-center">
@@ -117,7 +116,7 @@ export const Header = () => {
                         <div className="px-6">
                           <div className="flex items-start justify-between">
                             <Dialog.Title className="text-xl lg:text-2xl tracking-[0.2em] font-semibold uppercase">
-                              Nirav
+                              <Logo></Logo>
                             </Dialog.Title>
 
                             <div className="flex h-7 items-center">
