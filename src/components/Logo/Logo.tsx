@@ -3,7 +3,7 @@ export const Logo = () => {
     <>
       <h1 className="sr-only">Nirav Villa Uluwatu, Bali</h1>
 
-      <div className="w-24 lg:w-32">
+      <div className="w-24 lg:w-40">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="106.742 142.5 163.5 82.5"
