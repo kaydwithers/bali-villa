@@ -23,7 +23,7 @@ export const Button = ({
   const sizeClass = sizeClasses[size];
 
   const classes =
-    "flex gap-x-2 items-center justify-center rounded-md bg-indigo-600 font-semibold text-white shadow-sm hover:no-underline hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600";
+    "flex gap-x-2 items-center justify-center rounded-full bg-indigo-600 font-semibold text-white shadow-sm hover:no-underline hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600";
 
   return href ? (
     <a

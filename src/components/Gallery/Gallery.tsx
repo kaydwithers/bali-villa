@@ -115,7 +115,7 @@ const tabs: Array<ITabs> = [
 
 const MyTab = ({ children }: ITab) => {
   return (
-    <Tab className="rounded-full py-4 px-8 text-white font-semibold focus:outline-none aria-selected:bg-white/10 hover:bg-white/5">
+    <Tab className="rounded-full py-4 px-8 text-base lg:text-xl text-white focus:outline-none aria-selected:bg-white/10 hover:bg-white/5">
       {children}
     </Tab>
   );
@@ -188,7 +188,7 @@ export const Gallery = () => {
         <div className="flex w-full justify-center">
           <div className="w-full">
             <Tab.Group>
-              <Tab.List className="flex gap-x-4 mb-8">
+              <Tab.List className="flex justify-center gap-x-4 mb-8">
                 <MyTab>{tabs[0].name}</MyTab>
                 <MyTab>{tabs[1].name}</MyTab>
               </Tab.List>
