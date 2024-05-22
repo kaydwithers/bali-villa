@@ -19,10 +19,10 @@ const information: IInformation[] = [
     contents: (
       <>
         <p className="max-w-prose">
-          2 bedroom villa from 2,800,000 IDR per night.
+          2 bedroom villa from Rp 2,800,000 per night.
         </p>
         <p className="max-w-prose">
-          1 bedroom villa from 2,500,000 IDR per night.
+          1 bedroom villa from Rp 2,500,000 per night.
         </p>
       </>
     ),
@@ -33,7 +33,11 @@ const information: IInformation[] = [
     contents: (
       <ul className="flex flex-col gap-y-2">
         <li>
-          <a className="flex items-center gap-x-1" href="" target="_blank">
+          <a
+            className="flex items-center gap-x-1 text-white"
+            href=""
+            target="_blank"
+          >
             Padang Padang beach
             <ArrowUpRightIcon
               className="inline-block h-4 w-4"
@@ -42,7 +46,11 @@ const information: IInformation[] = [
           </a>
         </li>
         <li>
-          <a className="flex items-center gap-x-1" href="" target="_blank">
+          <a
+            className="flex items-center gap-x-1 text-white"
+            href=""
+            target="_blank"
+          >
             Suluban Beach (Perfect for surfing)
             <ArrowUpRightIcon
               className="inline-block h-4 w-4"
@@ -51,7 +59,11 @@ const information: IInformation[] = [
           </a>
         </li>
         <li>
-          <a className="flex items-center gap-x-1" href="" target="_blank">
+          <a
+            className="flex items-center gap-x-1 text-white"
+            href=""
+            target="_blank"
+          >
             Dreamland Beach
             <ArrowUpRightIcon
               className="inline-block h-4 w-4"
@@ -60,7 +72,11 @@ const information: IInformation[] = [
           </a>
         </li>
         <li>
-          <a className="flex items-center gap-x-1" href="" target="_blank">
+          <a
+            className="flex items-center gap-x-1 text-white"
+            href=""
+            target="_blank"
+          >
             Bingin Beach
             <ArrowUpRightIcon
               className="inline-block h-4 w-4"

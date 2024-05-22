@@ -1,12 +1,12 @@
 "use client";
 
 import { Heading } from "../Heading/Heading";
-import Image from "next/image";
 import { Layout } from "../Layout/Layout";
 import { MobileOverflow } from "../MobileOverflow/MobileOverflow";
 import { Modal } from "../Modal/Modal";
 import { Tab } from "@headlessui/react";
 import { useState } from "react";
+import Image from "next/image";
 
 interface ITabsItem {
   id: number;

@@ -5,6 +5,7 @@ import { Header } from "../components/Header/Header";
 import { Hero } from "../components/Hero/Hero";
 import { Information } from "../components/Information/Information";
 import { Map } from "../components/Map/Map";
+import { Services } from "../components/Services/Services";
 import { SocialMedia } from "../components/SocialMedia/SocialMedia";
 import { Testimonials } from "../components/Testimonials/Testimonials";
 
@@ -24,6 +25,7 @@ export default function Home() {
       <Gallery />
       <Information />
       <Map />
+      <Services />
       <Testimonials />
       <SocialMedia />
       <Contact />

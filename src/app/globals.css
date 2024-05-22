@@ -21,6 +21,7 @@ body {
 }
 
 .bg-primary {
+  background: rgb(var(--background-start-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
