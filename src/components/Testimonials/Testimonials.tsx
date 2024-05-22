@@ -46,7 +46,7 @@ export const Testimonials = () => {
             >
               {testimonial.contents.map((item, index) => (
                 <p
-                  className="text-base lg:text-xl max-w-prose h-full"
+                  className="text-base lg:text-xl/8 max-w-prose h-full"
                   key={index}
                 >
                   {item}
