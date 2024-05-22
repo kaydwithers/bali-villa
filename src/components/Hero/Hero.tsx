@@ -40,14 +40,14 @@ export const Hero = () => {
 
       <Layout classNameOverride="!pt-8 lg:!pt-16 !pb-0">
         <div className="flex justify-center">
-          <div className="max-w-full lg:max-w-4xl">
+          <div className="max-w-full lg:max-w-5xl">
             <h2 className="text-center text-base lg:text-2xl">
               <em>
-                Relax and unwind at Nirav Bali Uluwatu, where 'Nirav' embodies
-                calmness and peace. Set in the tranquil Pecatu Uluwatu, our cozy
-                Villa invites you to feel at home, miles away. Experience
-                leisure and comfort as Bali embraces you with its warmth and
-                charm.
+                Relax and unwind at Nirav Bali Uluwatu, where
+                &lsquo;Nirav&rsquo; embodies calmness and peace. Set in the
+                tranquil Pecatu Uluwatu, our cozy Villa invites you to feel at
+                home, miles away. Experience leisure and comfort as Bali
+                embraces you with its warmth and charm.
               </em>
             </h2>
           </div>
