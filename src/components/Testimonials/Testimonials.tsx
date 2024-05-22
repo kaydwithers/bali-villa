@@ -41,7 +41,7 @@ export const Testimonials = () => {
         <div className="grid grid-cols-3 gap-x-6 lg:gap-x-12 w-[175vw] lg:w-auto">
           {testimonials.map((testimonial) => (
             <div
-              className="flex flex-col items-center text-center gap-y-8"
+              className="flex flex-col items-center text-center gap-y-8 mb-4 lg:mb-0"
               key={testimonial.id}
             >
               {testimonial.contents.map((item, index) => (

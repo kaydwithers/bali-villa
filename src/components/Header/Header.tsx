@@ -52,7 +52,7 @@ export const Header = () => {
           </h1>
         </div>
 
-        <div className="hidden lg:flex gap-x-12 items-center">
+        <div className="hidden lg:flex gap-x-14 items-center">
           {menuItems.map((item) => (
             <p className="" key={item.id}>
               <a href={item.href ? item.href : `#${item.id}`}>{item.text}</a>
@@ -137,10 +137,13 @@ export const Header = () => {
                         </div>
 
                         <div className="mt-6 flex flex-1 flex-col px-6">
-                          <ul className="flex flex-col gap-y-4 mb-4">
+                          <ul className="flex flex-col gap-y-6 mb-4">
                             {menuItems.map((item) => (
                               <li className="text-xl" key={item.id}>
-                                <a href={item.href ? item.href : `#${item.id}`}>
+                                <a
+                                  href={item.href ? item.href : `#${item.id}`}
+                                  onClick={handleMenuClick}
+                                >
                                   {item.text}
                                 </a>
                               </li>
