@@ -135,8 +135,8 @@ export const Header = () => {
                           </div>
                         </div>
 
-                        <div className="mt-6 flex flex-1 flex-col px-6">
-                          <ul className="flex flex-col gap-y-6 mb-4">
+                        <div className="mt-8 flex flex-1 flex-col px-6">
+                          <ul className="flex flex-col gap-y-8 mb-6">
                             {menuItems.map((item) => (
                               <li className="text-xl" key={item.id}>
                                 <a
