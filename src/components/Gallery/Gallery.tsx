@@ -26,6 +26,67 @@ interface ITab {
 
 const tabs: Array<ITabs> = [
   {
+    name: "2 bedrooms",
+    items: [
+      {
+        id: 0,
+        caption: "Entrance to the Nirav Villa in Uluwatu, Bali.",
+        media_url: "/image/gallery/two-bedroom/entrance.JPG",
+        text: "Entrance",
+      },
+      {
+        id: 0,
+        caption: "Luxury pool at Nirav Villa in Uluwatu, Bali.",
+        media_url: "/image/gallery/two-bedroom/pool.JPG",
+        text: "Pool",
+      },
+      {
+        id: 1,
+        caption:
+          "Luxury lounge room with Netflix at Nirav Villa in Uluwatu, Bali.",
+        media_url: "/image/gallery/two-bedroom/lounge.JPG",
+        text: "Lounge room",
+      },
+      {
+        id: 2,
+        caption:
+          "Luxury kitchen with many amenities at Nirav Villa in Uluwatu, Bali.",
+        media_url: "/image/gallery/two-bedroom/kitchen.JPG",
+        text: "Kitchen",
+      },
+      {
+        id: 3,
+        caption: "Luxury comfortable bedroom at Nirav Villa in Uluwatu, Bali.",
+        media_url: "/image/gallery/two-bedroom/bedroom-1.JPG",
+        text: "Bedroom 1",
+      },
+      {
+        id: 4,
+        caption: "Luxury comfortable bedroom at Nirav Villa in Uluwatu, Bali.",
+        media_url: "/image/gallery/two-bedroom/bedroom-2.JPG",
+        text: "Bedroom 2",
+      },
+      {
+        id: 5,
+        caption: "Luxury dining area at Nirav Villa in Uluwatu, Bali.",
+        media_url: "/image/gallery/two-bedroom/dining.JPG",
+        text: "Dining area",
+      },
+      {
+        id: 6,
+        caption: "Luxury bathroom at Nirav Villa in Uluwatu, Bali.",
+        media_url: "/image/gallery/two-bedroom/bathroom-1.JPG",
+        text: "Bathroom 1",
+      },
+      {
+        id: 7,
+        caption: "Luxury bathroom at Nirav Villa in Uluwatu, Bali.",
+        media_url: "/image/gallery/two-bedroom/bathroom-2.JPG",
+        text: "Bathroom 2",
+      },
+    ],
+  },
+  {
     name: "1 bedroom",
     items: [
       {
@@ -76,61 +137,6 @@ const tabs: Array<ITabs> = [
         id: 7,
         caption: "Luxury bathroom at Nirav Villa in Uluwatu, Bali.",
         media_url: "/image/gallery/one-bedroom/bathroom-2.JPG",
-        text: "Bathroom 2",
-      },
-    ],
-  },
-  {
-    name: "2 bedrooms",
-    items: [
-      {
-        id: 0,
-        caption: "Luxury pool at Nirav Villa in Uluwatu, Bali.",
-        media_url: "/image/gallery/two-bedroom/pool.JPG",
-        text: "Pool",
-      },
-      {
-        id: 1,
-        caption:
-          "Luxury lounge room with Netflix at Nirav Villa in Uluwatu, Bali.",
-        media_url: "/image/gallery/two-bedroom/lounge.JPG",
-        text: "Lounge room",
-      },
-      {
-        id: 2,
-        caption:
-          "Luxury kitchen with many amenities at Nirav Villa in Uluwatu, Bali.",
-        media_url: "/image/gallery/two-bedroom/kitchen.JPG",
-        text: "Kitchen",
-      },
-      {
-        id: 3,
-        caption: "Luxury comfortable bedroom at Nirav Villa in Uluwatu, Bali.",
-        media_url: "/image/gallery/two-bedroom/bedroom-1.JPG",
-        text: "Bedroom 1",
-      },
-      {
-        id: 4,
-        caption: "Luxury comfortable bedroom at Nirav Villa in Uluwatu, Bali.",
-        media_url: "/image/gallery/two-bedroom/bedroom-2.JPG",
-        text: "Bedroom 2",
-      },
-      {
-        id: 5,
-        caption: "Luxury dining area at Nirav Villa in Uluwatu, Bali.",
-        media_url: "/image/gallery/two-bedroom/dining.JPG",
-        text: "Dining area",
-      },
-      {
-        id: 6,
-        caption: "Luxury bathroom at Nirav Villa in Uluwatu, Bali.",
-        media_url: "/image/gallery/two-bedroom/bathroom-1.JPG",
-        text: "Bathroom 1",
-      },
-      {
-        id: 7,
-        caption: "Luxury bathroom at Nirav Villa in Uluwatu, Bali.",
-        media_url: "/image/gallery/two-bedroom/bathroom-2.JPG",
         text: "Bathroom 2",
       },
     ],
