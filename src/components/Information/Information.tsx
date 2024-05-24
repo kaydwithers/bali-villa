@@ -126,7 +126,7 @@ export const Information = () => {
       </div>
 
       <div className="flex flex-1">
-        <Layout id="about">
+        <Layout id="about" classNameOverride="!pt-0 lg:!pt-12">
           <div className="flex flex-col w-full">
             {information.map((item) => (
               <div

@@ -47,7 +47,7 @@ const services: Array<IItem> = [
 
 const Tile = ({ item }: ITile) => {
   return (
-    <div className="bg-white/5 rounded-xl overflow-hidden">
+    <div className="bg-white/5 rounded-xl overflow-hidden w-[65vw] lg:w-auto mb-4 lg:mb-0">
       <div className="">
         <Image
           className="w-full h-full object-cover aspect-square"
@@ -74,7 +74,7 @@ export const Services = () => {
       <Heading>Services</Heading>
 
       <MobileOverflow>
-        <div className="grid grid-cols-3 gap-x-6 lg:gap-x-12 w-[175vw] lg:w-auto">
+        <div className="flex lg:grid lg:grid-cols-3 gap-x-6 lg:gap-x-12 lg:w-full">
           {services.map((item, index) => (
             <Tile key={index} item={item}></Tile>
           ))}

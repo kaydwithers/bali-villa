@@ -38,10 +38,10 @@ export const Testimonials = () => {
       <Heading>Reviews</Heading>
 
       <MobileOverflow>
-        <div className="grid grid-cols-3 gap-x-6 lg:gap-x-12 w-[175vw] lg:w-auto">
+        <div className="flex gap-x-6 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:w-full">
           {testimonials.map((testimonial) => (
             <div
-              className="flex flex-col items-center text-center gap-y-8 mb-4 lg:mb-0"
+              className="flex flex-col items-center text-center gap-y-8 mb-4 lg:mb-0 w-[65vw] lg:w-auto"
               key={testimonial.id}
             >
               {testimonial.contents.map((item, index) => (
@@ -53,7 +53,7 @@ export const Testimonials = () => {
                 </p>
               ))}
 
-              <div className="flex gap-x-4 text-yellow-400">
+              <div className="flex gap-x-2 lg:gap-x-4 text-yellow-400">
                 {[...Array(testimonial.stars)].map((_, index) => (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

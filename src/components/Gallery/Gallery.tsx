@@ -7,6 +7,7 @@ import { Modal } from "../Modal/Modal";
 import { Tab } from "@headlessui/react";
 import { useState } from "react";
 import Image from "next/image";
+import styled from "styled-components";
 
 interface ITabsItem {
   id: number;
@@ -30,41 +31,53 @@ const tabs: Array<ITabs> = [
     items: [
       {
         id: 0,
+        caption: "Entrance to the Nirav Villa in Uluwatu, Bali.",
+        media_url: "/image/gallery/one-bedroom/entrance.JPG",
+        text: "Entrance",
+      },
+      {
+        id: 1,
         caption: "Luxury pool at Nirav Villa in Uluwatu, Bali.",
         media_url: "/image/gallery/one-bedroom/pool.JPG",
         text: "Pool",
       },
       {
-        id: 1,
+        id: 2,
         caption:
           "Luxury lounge room with Netflix at Nirav Villa in Uluwatu, Bali.",
         media_url: "/image/gallery/one-bedroom/lounge.JPG",
         text: "Lounge room",
       },
       {
-        id: 2,
+        id: 3,
         caption:
           "Luxury kitchen with many amenities at Nirav Villa in Uluwatu, Bali.",
         media_url: "/image/gallery/one-bedroom/kitchen.JPG",
         text: "Kitchen",
       },
       {
-        id: 3,
+        id: 4,
         caption: "Luxury comfortable bedroom at Nirav Villa in Uluwatu, Bali.",
         media_url: "/image/gallery/one-bedroom/bedroom.JPG",
         text: "Bedroom",
       },
       {
-        id: 4,
+        id: 5,
         caption: "Luxury dining area at Nirav Villa in Uluwatu, Bali.",
         media_url: "/image/gallery/one-bedroom/dining.JPG",
         text: "Dining area",
       },
       {
-        id: 5,
+        id: 6,
         caption: "Luxury bathroom at Nirav Villa in Uluwatu, Bali.",
-        media_url: "/image/gallery/one-bedroom/bathroom.JPG",
-        text: "Bathroom",
+        media_url: "/image/gallery/one-bedroom/bathroom-1.JPG",
+        text: "Bathroom 1",
+      },
+      {
+        id: 7,
+        caption: "Luxury bathroom at Nirav Villa in Uluwatu, Bali.",
+        media_url: "/image/gallery/one-bedroom/bathroom-2.JPG",
+        text: "Bathroom 2",
       },
     ],
   },
@@ -94,20 +107,32 @@ const tabs: Array<ITabs> = [
       {
         id: 3,
         caption: "Luxury comfortable bedroom at Nirav Villa in Uluwatu, Bali.",
-        media_url: "/image/gallery/two-bedroom/bedroom.JPG",
-        text: "Bedroom",
+        media_url: "/image/gallery/two-bedroom/bedroom-1.JPG",
+        text: "Bedroom 1",
       },
       {
         id: 4,
+        caption: "Luxury comfortable bedroom at Nirav Villa in Uluwatu, Bali.",
+        media_url: "/image/gallery/two-bedroom/bedroom-2.JPG",
+        text: "Bedroom 2",
+      },
+      {
+        id: 5,
         caption: "Luxury dining area at Nirav Villa in Uluwatu, Bali.",
         media_url: "/image/gallery/two-bedroom/dining.JPG",
         text: "Dining area",
       },
       {
-        id: 5,
+        id: 6,
         caption: "Luxury bathroom at Nirav Villa in Uluwatu, Bali.",
-        media_url: "/image/gallery/two-bedroom/bathroom.JPG",
-        text: "Bathroom",
+        media_url: "/image/gallery/two-bedroom/bathroom-1.JPG",
+        text: "Bathroom 1",
+      },
+      {
+        id: 7,
+        caption: "Luxury bathroom at Nirav Villa in Uluwatu, Bali.",
+        media_url: "/image/gallery/two-bedroom/bathroom-2.JPG",
+        text: "Bathroom 2",
       },
     ],
   },
@@ -134,10 +159,10 @@ const MyTabPanel = ({ items }: ITabs) => {
     <>
       <Tab.Panel className="">
         <MobileOverflow>
-          <ul className="grid gap-6 lg:gap-12 grid-cols-6 lg:grid-cols-3 w-[345vw] lg:w-auto">
+          <ul className="flex lg:grid gap-6 lg:gap-12 lg:grid-cols-3 lg:w-full">
             {items.map((item) => (
               <button
-                className="aspect-square group"
+                className="aspect-square group w-[65vw] lg:w-auto"
                 key={item.id}
                 onClick={() => handleModal(item.id)}
               >
