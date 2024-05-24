@@ -5,7 +5,7 @@ import React from "react";
 
 export const Cta = () => {
   return (
-    <Layout classNameOverride="!py-6">
+    <Layout>
       <div className="flex justify-center">
         <div className="w-80">
           <Button
