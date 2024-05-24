@@ -48,7 +48,7 @@ export const Header = () => {
     <Layout classNameOverride="!py-4 lg:!py-8" id="header">
       <div className="flex items-center justify-between w-full">
         <div className="">
-          <Logo></Logo>
+          <Logo />
         </div>
 
         <div className="hidden lg:flex gap-x-14 items-center">
@@ -135,7 +135,7 @@ export const Header = () => {
                           </div>
                         </div>
 
-                        <div className="mt-8 flex flex-1 flex-col px-6">
+                        <div className="mt-10 flex flex-1 flex-col px-6">
                           <ul className="flex flex-col gap-y-8 mb-6">
                             {menuItems.map((item) => (
                               <li className="text-xl" key={item.id}>
