@@ -165,7 +165,7 @@ const MyTabPanel = ({ items }: ITabs) => {
                 key={item.id}
                 onClick={() => handleModal(item.id)}
               >
-                <div className="overflow-hidden rounded-xl mb-4">
+                <div className="overflow-hidden rounded-xl mb-4 bg-white/10">
                   <Image
                     className="w-full h-full object-cover aspect-square group-hover:scale-105 duration-[350ms]"
                     src={item.media_url}
