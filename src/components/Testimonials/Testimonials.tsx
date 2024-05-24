@@ -3,31 +3,35 @@ import { Layout } from "../Layout/Layout";
 import { MobileOverflow } from "../MobileOverflow/MobileOverflow";
 
 interface ITestimonials {
-  id: string;
+  id: number;
   contents: string[];
+  author: string;
   stars: number;
 }
 
 const testimonials: ITestimonials[] = [
   {
-    id: "1",
+    id: 1,
     contents: [
-      "We loved our time at this private villa—it's a peaceful hideaway with a small pool that's just right for a refreshing dip. If you're after relaxation and some alone time, this place nails it with attentive staff making sure you have a wonderful stay.",
+      "We loved our time at this private villa, it was a peaceful hideaway with a small pool that's just right for a refreshing dip. If you're after relaxation and some alone time, this place nails it with attentive staff making sure you have a wonderful stay.",
     ],
+    author: "Gemma, UK",
     stars: 5,
   },
   {
-    id: "2",
-    contents: [
-      "This villa is all about luxury in a cozy setting—the small pool is perfect for couples or small groups to enjoy. The service is top-notch, and you'll feel pampered from the moment you arrive.",
-    ],
-    stars: 5,
-  },
-  {
-    id: "3",
+    id: 2,
     contents: [
       "Picture a lovely villa with a small pool, where you can soak up Bali's vibes in peace. The staff here are amazing, adding that extra touch to make your stay special. It's a definite thumbs-up for anyone seeking a cozy and welcoming Bali experience.",
     ],
+    author: "Eva, Indonesia",
+    stars: 5,
+  },
+  {
+    id: 3,
+    contents: [
+      "The service is top-notch, and you'll feel pampered from the moment you arrive.",
+    ],
+    author: "Chloé, France",
     stars: 5,
   },
 ];
@@ -44,14 +48,20 @@ export const Testimonials = () => {
               className="flex flex-col items-center text-center gap-y-8 mb-4 lg:mb-0 w-[65vw] lg:w-auto"
               key={testimonial.id}
             >
-              {testimonial.contents.map((item, index) => (
-                <p
-                  className="text-base lg:text-xl/8 max-w-prose h-full"
-                  key={index}
-                >
-                  {item}
+              <div className="flex flex-col text-center gap-y-6 h-full">
+                {testimonial.contents.map((item, index) => (
+                  <p
+                    className="text-base lg:text-xl/8 max-w-prose h-full"
+                    key={index}
+                  >
+                    {item}
+                  </p>
+                ))}
+
+                <p className="text-base lg:text-xl/8">
+                  &mdash; {testimonial.author}
                 </p>
-              ))}
+              </div>
 
               <div className="flex gap-x-2 lg:gap-x-4 text-yellow-400">
                 {[...Array(testimonial.stars)].map((_, index) => (
