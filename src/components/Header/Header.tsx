@@ -116,7 +116,7 @@ export const Header = () => {
                         <div className="px-6">
                           <div className="flex items-start justify-between">
                             <Dialog.Title className="text-xl lg:text-2xl tracking-[0.2em] font-semibold uppercase">
-                              <Logo></Logo>
+                              <Logo />
                             </Dialog.Title>
 
                             <div className="flex h-7 items-center">

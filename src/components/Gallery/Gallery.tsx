@@ -7,7 +7,6 @@ import { Modal } from "../Modal/Modal";
 import { Tab } from "@headlessui/react";
 import { useState } from "react";
 import Image from "next/image";
-import styled from "styled-components";
 
 interface ITabsItem {
   id: number;
