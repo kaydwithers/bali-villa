@@ -164,7 +164,7 @@ const MyTabPanel = ({ items }: ITabs) => {
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         <Image
-          className="w-full h-full object-cover aspect-auto"
+          className="w-full h-full object-cover aspect-video"
           src={activeMedia.media_url}
           alt={activeMedia.caption}
           height="0"

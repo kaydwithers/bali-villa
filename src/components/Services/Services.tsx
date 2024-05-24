@@ -7,8 +7,7 @@ import React from "react";
 
 interface IItem {
   title: string;
-  length: string;
-  price: string;
+  text: string;
   media: {
     media_url: string;
     caption: string;
@@ -22,8 +21,7 @@ interface ITile {
 const services: Array<IItem> = [
   {
     title: "Airport Pick up",
-    length: "3 hr",
-    price: "Rp 200,000",
+    text: "3 hours for Rp 200,000",
     media: {
       media_url: "/image/services/airport-pick-up.JPG",
       caption: "",
@@ -31,8 +29,7 @@ const services: Array<IItem> = [
   },
   {
     title: "Charter Car",
-    length: "10 hr",
-    price: "Rp 750,000",
+    text: "10 hours for Rp 750,000",
     media: {
       media_url: "/image/services/charter-car.JPG",
       caption: "",
@@ -40,8 +37,7 @@ const services: Array<IItem> = [
   },
   {
     title: "Airport Drop Off",
-    length: "3 hr",
-    price: "Rp 200,000",
+    text: "3 hours for Rp 200,000",
     media: {
       media_url: "/image/services/airport-drop-off.JPG",
       caption: "",
@@ -54,7 +50,7 @@ const Tile = ({ item }: ITile) => {
     <div className="bg-white/5 rounded-xl overflow-hidden">
       <div className="">
         <Image
-          className="w-full h-full object-cover aspect-auto"
+          className="w-full h-full object-cover aspect-square"
           src={item.media.media_url}
           alt={item.media.caption}
           height="0"
@@ -66,8 +62,7 @@ const Tile = ({ item }: ITile) => {
 
       <div className="flex flex-col gap-y-4 pt-6 px-8 pb-8">
         <h4 className="text-xl font-semibold">{item.title}</h4>
-        <p>{item.length}</p>
-        <p>{item.price}</p>
+        <p>{item.text}</p>
       </div>
     </div>
   );
