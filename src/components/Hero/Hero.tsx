@@ -10,7 +10,7 @@ export const Hero = () => {
         <div className="relative">
           <Image
             className="w-full h-[65vh] object-cover"
-            src="/images/hero.JPG"
+            src="/image/hero.JPG"
             alt="Luxury lounge room with Netflix and pool at Nirav Villa in Uluwatu, Bali."
             height="0"
             width="0"

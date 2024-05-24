@@ -25,7 +25,7 @@ const services: Array<IItem> = [
     length: "3 hr",
     price: "Rp 200,000",
     media: {
-      media_url: "/images/services/airport-pick-up.JPG",
+      media_url: "/image/services/airport-pick-up.JPG",
       caption: "",
     },
   },
@@ -34,7 +34,7 @@ const services: Array<IItem> = [
     length: "10 hr",
     price: "Rp 750,000",
     media: {
-      media_url: "/images/services/charter-car.JPG",
+      media_url: "/image/services/charter-car.JPG",
       caption: "",
     },
   },
@@ -43,7 +43,7 @@ const services: Array<IItem> = [
     length: "3 hr",
     price: "Rp 200,000",
     media: {
-      media_url: "/images/services/airport-drop-off.JPG",
+      media_url: "/image/services/airport-drop-off.JPG",
       caption: "",
     },
   },
