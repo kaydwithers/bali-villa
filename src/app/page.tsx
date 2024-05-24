@@ -27,8 +27,8 @@ export default function Home() {
       <Map />
       <Services />
       <Testimonials />
-      <SocialMedia />
-      <Contact />
+      {/* <SocialMedia /> */}
+      {/* <Contact /> */}
       <Footer />
     </main>
   );

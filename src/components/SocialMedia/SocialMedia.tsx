@@ -31,10 +31,7 @@ export const SocialMedia = () => {
   const fetchInstagramFeed = async () => {
     try {
       const response = await fetch(
-        `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&access_token=${
-          // node.env.NEXT_PUBLIC_INSTAGRAM_APP_SECRET
-          ""
-        }`,
+        `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&access_token=${process.env.NEXT_PUBLIC_INSTAGRAM_PASSWORD}`,
       );
       if (response.ok) {
         const data = await response.json();
@@ -43,11 +40,12 @@ export const SocialMedia = () => {
         console.error("Failed to fetch Instagram feed");
       }
     } catch (error) {
-      console.error("Error fetching Instagram feed:", error);
+      console.error("Error fetching Instagram feed: ", error);
     }
   };
 
   useEffect(() => {
+    // Meta is not currently accepting new testers for the API.
     fetchInstagramFeed();
   }, []);
 
