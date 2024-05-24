@@ -29,8 +29,8 @@ export const menuItems: IMenuItems[] = [
     href: "",
   },
   {
-    id: "contact",
-    text: "Contact",
+    id: "services",
+    text: "Services",
     href: "",
   },
 ];
