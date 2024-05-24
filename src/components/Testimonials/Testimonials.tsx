@@ -12,7 +12,7 @@ const testimonials: ITestimonials[] = [
   {
     id: "1",
     contents: [
-      "We loved our time at this private villa—it’s a peaceful hideaway with a small pool that’s just right for a refreshing dip. If you’re after relaxation and some alone time, this place nails it with attentive staff making sure you have a wonderful stay.",
+      "We loved our time at this private villa—it's a peaceful hideaway with a small pool that's just right for a refreshing dip. If you're after relaxation and some alone time, this place nails it with attentive staff making sure you have a wonderful stay.",
     ],
     stars: 5,
   },
@@ -28,7 +28,7 @@ const testimonials: ITestimonials[] = [
     contents: [
       "Picture a lovely villa with a small pool, where you can soak up Bali's vibes in peace. The staff here are amazing, adding that extra touch to make your stay special. It's a definite thumbs-up for anyone seeking a cozy and welcoming Bali experience.",
     ],
-    stars: 4,
+    stars: 5,
   },
 ];
 

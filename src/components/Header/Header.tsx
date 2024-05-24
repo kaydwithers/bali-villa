@@ -136,7 +136,7 @@ export const Header = () => {
                         </div>
 
                         <div className="mt-10 flex flex-1 flex-col px-6">
-                          <ul className="flex flex-col gap-y-8 mb-6">
+                          <ul className="flex flex-col gap-y-8 mb-6 text-center">
                             {menuItems.map((item) => (
                               <li className="text-xl" key={item.id}>
                                 <a
