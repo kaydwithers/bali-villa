@@ -14,7 +14,7 @@ export const Hero = () => {
               loop
               muted
               className="w-full h-full object-cover"
-              poster="/image/hero.JPG"
+              poster="/image/hero-mobile.JPG"
             >
               <source src="/video/hero.mp4" type="video/mp4" />
             </video>
