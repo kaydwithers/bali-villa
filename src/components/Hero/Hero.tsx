@@ -13,7 +13,7 @@ export const Hero = () => {
               autoPlay
               loop
               muted
-              className="w-full h-full object-cover"
+              className="w-full h-[90vh] object-cover"
               poster="/image/hero-mobile.JPG"
             >
               <source src="/video/hero.mp4" type="video/mp4" />
