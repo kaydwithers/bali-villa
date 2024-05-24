@@ -213,13 +213,15 @@ export const Gallery = () => {
           <div className="w-full">
             <Tab.Group>
               <Tab.List className="flex justify-center gap-x-4 mb-8">
-                <MyTab>{tabs[0].name}</MyTab>
-                <MyTab>{tabs[1].name}</MyTab>
+                {tabs.map((item, index) => (
+                  <MyTab key={index}>{item.name}</MyTab>
+                ))}
               </Tab.List>
 
               <Tab.Panels className="">
-                <MyTabPanel items={tabs[0].items}></MyTabPanel>
-                <MyTabPanel items={tabs[1].items}></MyTabPanel>
+                {tabs.map((item, index) => (
+                  <MyTabPanel key={index} items={item.items}></MyTabPanel>
+                ))}
               </Tab.Panels>
             </Tab.Group>
           </div>

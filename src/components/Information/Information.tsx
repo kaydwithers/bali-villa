@@ -103,7 +103,7 @@ const information: IInformation[] = [
                 href="https://maps.app.goo.gl/XgHFaTvzwthxafMB6"
                 target="_blank"
               >
-                Finn's at Uluwatu
+                Finn&lsquo;s at Uluwatu
                 <ArrowUpRightIcon
                   className="inline-block h-4 w-4"
                   title="Opens in new tab"
@@ -250,21 +250,22 @@ const information: IInformation[] = [
 
             <li>
               <strong className="font-semibold">Mosquito Protection:</strong>{" "}
-              Because Bali is a tropical paradise, we've got you covered with
-              mosquito repellents in every room. Feel free to use either the
-              electric ones or the lotion to keep those pesky bugs at bay.
+              Because Bali is a tropical paradise, we&lsquo;ve got you covered
+              with mosquito repellents in every room. Feel free to use either
+              the electric ones or the lotion to keep those pesky bugs at bay.
             </li>
 
             <li>
               <strong className="font-semibold">Night Sounds:</strong> You might
               hear the distinctive call of geckos around our area at night. But
-              don't worry, they're just outside the villa and won't come in.
+              don&lsquo;t worry, they&lsquo;re just outside the villa and
+              won&lsquo;t come in.
             </li>
 
             <li>
               <strong className="font-semibold">Chirping Crickets:</strong>{" "}
-              Another common night time sound you'll encounter here is the
-              soothing chirping of crickets. It's all part of the tropical
+              Another common night time sound you&lsquo;ll encounter here is the
+              soothing chirping of crickets. It&lsquo;s all part of the tropical
               symphony!
             </li>
 
