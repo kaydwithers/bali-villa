@@ -4,7 +4,7 @@ interface IButton {
   children: ReactNode;
   href?: string;
   isExternal?: boolean;
-  size?: "small" | "medium";
+  size?: "small" | "medium" | "large";
   type?: "submit";
 }
 
@@ -18,6 +18,7 @@ export const Button = ({
   const sizeClasses = {
     small: "px-4 py-2 text-sm",
     medium: "px-8 py-4 text-base",
+    large: "px-12 py-6 text-xl",
   };
 
   const sizeClass = sizeClasses[size];

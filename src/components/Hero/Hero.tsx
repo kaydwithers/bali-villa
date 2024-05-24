@@ -16,7 +16,7 @@ export const Hero = () => {
               className="w-full h-[90vh] object-cover bg-white/10"
               poster="/image/hero-mobile.JPG"
             >
-              <source src="/video/hero2222.mp4" type="video/mp4" />
+              <source src="/video/hero.mp4" type="video/mp4" />
             </video>
           </div>
 

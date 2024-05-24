@@ -1,4 +1,5 @@
 import { Contact } from "../components/Contact/Contact";
+import { Cta } from "../components/Cta/Cta";
 import { Footer } from "../components/Footer/Footer";
 import { Gallery } from "../components/Gallery/Gallery";
 import { Header } from "../components/Header/Header";
@@ -29,6 +30,7 @@ export default function Home() {
       <Testimonials />
       {/* <SocialMedia /> */}
       {/* <Contact /> */}
+      <Cta></Cta>
       <Footer />
     </main>
   );
