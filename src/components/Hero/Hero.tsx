@@ -8,17 +8,31 @@ export const Hero = () => {
     <>
       <div className="w-full">
         <div className="relative">
-          <Image
-            className="w-full h-[65vh] object-cover"
-            src="/image/hero.JPG"
-            alt="Luxury lounge room with Netflix and pool at Nirav Villa in Uluwatu, Bali."
-            height="0"
-            width="0"
-            sizes="100vw"
-            priority
-          />
+          <div className="block lg:hidden">
+            <video
+              autoPlay
+              loop
+              muted
+              className="w-full h-full object-cover"
+              poster="/image/hero.JPG"
+            >
+              <source src="/video/hero.mp4" type="video/mp4" />
+            </video>
+          </div>
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-black/0"></div>
+          <div className="hidden lg:block">
+            <Image
+              className="w-full h-[65vh] object-cover"
+              src="/image/hero.JPG"
+              alt="Luxury lounge room with Netflix and pool at Nirav Villa in Uluwatu, Bali."
+              height="0"
+              width="0"
+              sizes="100vw"
+              priority
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-black/0"></div>
+          </div>
 
           {/* <div className="container mx-auto hidden lg:block absolute left-0 right-0 bottom-12 px-12 lg:px-64 w-full">
           <div className="p-6 rounded-full drop-shadow-xl bg-gray-100">
