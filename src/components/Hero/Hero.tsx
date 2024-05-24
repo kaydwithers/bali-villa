@@ -13,16 +13,16 @@ export const Hero = () => {
               autoPlay
               loop
               muted
-              className="w-full h-[90vh] object-cover"
+              className="w-full h-[90vh] object-cover bg-white/10"
               poster="/image/hero-mobile.JPG"
             >
-              <source src="/video/hero.mp4" type="video/mp4" />
+              <source src="/video/hero2222.mp4" type="video/mp4" />
             </video>
           </div>
 
           <div className="hidden lg:block">
             <Image
-              className="w-full h-[65vh] object-cover"
+              className="w-full h-[65vh] object-cover bg-white/10"
               src="/image/hero.JPG"
               alt="Luxury lounge room with Netflix and pool at Nirav Villa in Uluwatu, Bali."
               height="0"
