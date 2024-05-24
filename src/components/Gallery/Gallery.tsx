@@ -139,7 +139,7 @@ const tabs: Array<ITabs> = [
 
 const MyTab = ({ children }: ITab) => {
   return (
-    <Tab className="rounded-full py-4 px-8 text-base lg:text-xl text-white focus:outline-none aria-selected:bg-white/10 hover:bg-white/5">
+    <Tab className="font-semibold rounded-full py-5 px-8 lg:py-6 lg:px-12 text-base lg:text-xl text-white focus:outline-none aria-selected:bg-white/10 hover:bg-white/5">
       {children}
     </Tab>
   );

@@ -40,7 +40,7 @@ export const Modal = ({ children, isOpen, onClose }: IModal) => {
                   <div className="absolute right-0 top-0 mr-4 mt-4">
                     <button
                       type="button"
-                      className="bg-white text-black rounded-full p-2"
+                      className="bg-white hover:bg-white/75 text-black rounded-full p-2"
                       onClick={onClose}
                     >
                       <span className="sr-only">Close dialog</span>
