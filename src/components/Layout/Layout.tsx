@@ -5,7 +5,8 @@ interface ILayout {
 }
 
 export const Layout = ({ children, classNameOverride, id }: ILayout) => {
-  const baseClasses = "container mx-auto px-6 py-12 lg:px-24 lg:py-24 w-full";
+  const baseClasses =
+    "container xl:max-w-[1730px] mx-auto px-6 py-12 lg:px-24 lg:py-24 w-full";
   const combinedClasses = `${classNameOverride} ${baseClasses}`;
 
   return (
