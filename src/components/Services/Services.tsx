@@ -60,7 +60,7 @@ const Tile = ({ item }: ITile) => {
         />
       </div>
 
-      <div className="flex flex-col gap-y-4 pt-6 px-8 pb-8 lg:pt-8 lg:px-10 lg:pb-10">
+      <div className="flex flex-col gap-y-4 pt-6 px-8 pb-8 lg:pt-8 lg:px-10 lg:pb-10 text-center">
         <h4 className="text-xl font-semibold">{item.title}</h4>
         <p>{item.text}</p>
       </div>
