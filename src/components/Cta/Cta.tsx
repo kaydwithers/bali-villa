@@ -16,9 +16,8 @@ export const Cta = () => {
 
   const clickHandler = () => {
     event({
-      action: "book_now_cta",
-      category: "ecommerce",
-      label: "Book now CTA clicked",
+      action: "book_now_cta_button",
+      label: "Book now CTA button clicked",
     });
 
     window.open(

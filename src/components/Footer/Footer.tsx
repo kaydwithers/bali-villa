@@ -5,6 +5,27 @@ import { Layout } from "../Layout/Layout";
 import { menuItems } from "../Header/Header";
 
 export const Footer = () => {
+  const event = ({ action, category, label, value }: any) => {
+    (window as any).gtag("event", action, {
+      event_category: category,
+      event_label: label,
+      value: value,
+    });
+  };
+
+  const clickHandler = () => {
+    event({
+      action: "google_maps_link",
+      label: "Google Maps link clicked",
+    });
+
+    window.open(
+      "https://maps.app.goo.gl/iXzQbtqXC9brTowKA",
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
+
   return (
     <footer>
       <Layout>
@@ -59,11 +80,7 @@ export const Footer = () => {
 
           <div className="">
             <p>
-              <a
-                className=""
-                href="https://maps.app.goo.gl/hNvptmtVh8ZmPg3w6"
-                target="_blank"
-              >
+              <a className="cursor-pointer" onClick={clickHandler}>
                 Jl. Villa Airis. <br />
                 GG Bunga Mekar No.3, <br />
                 Ungasan — Pecatu, Uluwatu{" "}

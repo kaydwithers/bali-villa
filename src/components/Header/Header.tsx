@@ -54,9 +54,9 @@ export const Header = () => {
 
   const clickHandler = () => {
     event({
-      action: "book_now_header",
+      action: "book_now_header_button",
       category: "ecommerce",
-      label: "Book now header clicked",
+      label: "Book now header button clicked",
     });
 
     window.open(
@@ -87,10 +87,7 @@ export const Header = () => {
           </button>
           */}
 
-          <Button
-            href="https://www.airbnb.com.au/rooms/1157674003167983926"
-            isExternal
-          >
+          <Button clickHandler={clickHandler}>
             Book now
             <ArrowUpRightIcon
               className="inline-block h-4 w-4"
