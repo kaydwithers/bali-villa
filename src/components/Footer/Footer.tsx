@@ -18,12 +18,6 @@ export const Footer = () => {
       action: "google_maps_link",
       label: "Google Maps link clicked",
     });
-
-    window.open(
-      "https://maps.app.goo.gl/iXzQbtqXC9brTowKA",
-      "_blank",
-      "noopener,noreferrer",
-    );
   };
 
   return (
@@ -80,7 +74,13 @@ export const Footer = () => {
 
           <div className="">
             <p>
-              <a className="cursor-pointer" onClick={clickHandler}>
+              <a
+                href="https://maps.app.goo.gl/iXzQbtqXC9brTowKA"
+                className="cursor-pointer"
+                target="_blank"
+                rel="noopener,noreferrer"
+                onClick={clickHandler}
+              >
                 Jl. Villa Airis. <br />
                 GG Bunga Mekar No.3, <br />
                 Ungasan — Pecatu, Uluwatu{" "}
