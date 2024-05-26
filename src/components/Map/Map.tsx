@@ -14,7 +14,7 @@ export const Map = () => {
 
     const { Map } = await loader.importLibrary("maps");
 
-    const { Marker } = (await loader.importLibrary(
+    const { AdvancedMarkerElement } = (await loader.importLibrary(
       "marker",
     )) as google.maps.MarkerLibrary;
 
@@ -31,7 +31,7 @@ export const Map = () => {
 
     const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
 
-    const marker = new Marker({
+    const marker = new AdvancedMarkerElement({
       map,
       position,
     });
