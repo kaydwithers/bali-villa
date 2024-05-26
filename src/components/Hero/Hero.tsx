@@ -20,19 +20,21 @@ export const Hero = () => {
             </video>
           </div>
 
-          <div className="hidden lg:block">
-            <Image
-              className="w-full h-[65vh] object-cover bg-white/10"
-              src="/image/hero.JPG"
-              alt="Luxury lounge room with Netflix and pool at Nirav Villa in Uluwatu, Bali."
-              height="0"
-              width="0"
-              sizes="100vw"
-              objectFit="cover"
-              priority
-            />
+          <div className="hidden lg:block h-[65vh]">
+            <div className="relative w-full h-full">
+              <div className="absolute inset-0 bg-white/10"></div>
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-black/0"></div>
+              <Image
+                className="absolute inset-0 w-full h-full object-cover bg-white/10"
+                src="/image/hero.JPG"
+                alt="Luxury lounge room with Netflix and pool at Nirav Villa in Uluwatu, Bali."
+                height="0"
+                width="0"
+                sizes="100vw"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-black/0"></div>
+            </div>
           </div>
 
           {/* <div className="container mx-auto hidden lg:block absolute left-0 right-0 bottom-12 px-12 lg:px-64 w-full">

@@ -167,6 +167,7 @@ const MyTabPanel = ({ items }: ITabs) => {
           <ul className="flex lg:grid gap-6 lg:gap-12 lg:grid-cols-3 lg:w-full">
             {items.map((item) => (
               <button
+                aria-label={item.text}
                 className="group w-[65vw] lg:w-auto"
                 key={item.id}
                 onClick={() => handleModal(item.id)}

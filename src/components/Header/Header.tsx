@@ -121,14 +121,14 @@ export const Header = () => {
 
                             <div className="flex h-7 items-center">
                               <button
+                                aria-label="Close menu"
                                 type="button"
                                 className="rounded-md"
                                 onClick={handleMenuClick}
                               >
-                                <span className="sr-only">Close panel</span>
                                 <XMarkIcon
                                   className="h-6 w-6"
-                                  aria-hidden="true"
+                                  role="presentation"
                                 />
                               </button>
                             </div>
