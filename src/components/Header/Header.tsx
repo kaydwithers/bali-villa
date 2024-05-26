@@ -78,8 +78,8 @@ export const Header = () => {
         </div>
 
         <div className="block lg:hidden">
-          <button onClick={handleMenuClick}>
-            <Bars3Icon className="inline-block h-8 w-8" title="Open menu" />
+          <button aria-label="Open menu" onClick={handleMenuClick}>
+            <Bars3Icon className="inline-block h-8 w-8" role="presentation" />
           </button>
 
           <Transition show={isOpen} as={Fragment}>
