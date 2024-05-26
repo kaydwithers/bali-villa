@@ -29,15 +29,15 @@ export const Footer = () => {
   return (
     <footer>
       <Layout>
-        <div className="flex justify-between items-center">
-          <div className="flex flex-col lg:flex-row gap-x-12 gap-y-6">
+        <div className="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left gap-y-10">
+          <div className="flex flex-col lg:flex-row gap-x-12 gap-y-8">
             {menuItems.map((item) => (
               <p className="" key={item.id}>
                 <a href={item.href ? item.href : `#${item.id}`}>{item.text}</a>
               </p>
             ))}
 
-            <p className="">
+            <p className="flex justify-center">
               <a
                 aria-label="Instagram"
                 className="flex items-center gap-x-4"
@@ -58,7 +58,7 @@ export const Footer = () => {
               </a>
             </p>
 
-            <p className="">
+            <p className="flex justify-center">
               <a
                 aria-label="WhatsApp messenger"
                 className="flex items-center gap-x-4"

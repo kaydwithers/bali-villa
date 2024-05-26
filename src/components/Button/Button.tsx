@@ -41,7 +41,7 @@ export const Button = ({
     </a>
   ) : (
     <button
-      className={`${classes} ${sizeClass}`}
+      className={`${classes} ${sizeClass} w-full`}
       type={type}
       onClick={clickHandler}
     >
