@@ -44,6 +44,28 @@ export const Header = () => {
 
   const handleLocaleSelect = () => {};
 
+  const event = ({ action, category, label, value }: any) => {
+    (window as any).gtag("event", action, {
+      event_category: category,
+      event_label: label,
+      value: value,
+    });
+  };
+
+  const clickHandler = () => {
+    event({
+      action: "book_now_header",
+      category: "ecommerce",
+      label: "Book now header clicked",
+    });
+
+    window.open(
+      "https://www.airbnb.com.au/rooms/1157674003167983926",
+      "_blank",
+      "noopener,noreferrer",
+    );
+  };
+
   return (
     <Layout classNameOverride="!py-4 lg:!py-8" id="header">
       <div className="flex items-center justify-between w-full">
@@ -152,6 +174,7 @@ export const Header = () => {
                               <Button
                                 href="https://www.airbnb.com.au/rooms/1157674003167983926"
                                 isExternal
+                                clickHandler={clickHandler}
                               >
                                 Book now
                                 <ArrowUpRightIcon
