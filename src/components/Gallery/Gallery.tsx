@@ -166,31 +166,32 @@ const MyTabPanel = ({ items }: ITabs) => {
         <MobileOverflow>
           <ul className="flex lg:grid gap-6 lg:gap-12 lg:grid-cols-3 lg:w-full">
             {items.map((item) => (
-              <button
-                aria-label={item.text}
-                className="group w-[65vw] lg:w-auto"
-                key={item.id}
-                onClick={() => handleModal(item.id)}
-              >
-                <div className="relative aspect-square overflow-hidden rounded-xl mb-4">
-                  <div className="animate-pulse absolute inset-0 bg-white/10"></div>
+              <li className="w-[65vw] lg:w-auto">
+                <button
+                  className="group w-full"
+                  key={item.id}
+                  onClick={() => handleModal(item.id)}
+                >
+                  <div className="relative aspect-square overflow-hidden rounded-xl mb-4">
+                    <div className="animate-pulse absolute inset-0 bg-white/10"></div>
 
-                  <Image
-                    className="absolute inset-0 aspect-square w-full h-full object-cover group-hover:scale-105 duration-[350ms]"
-                    src={item.media_url}
-                    alt={item.caption}
-                    height="480"
-                    width="480"
-                    sizes="(max-width: 600px) 280px, 480px"
-                    layout="responsive"
-                    objectFit="cover"
-                  />
-                </div>
+                    <Image
+                      className="absolute inset-0 aspect-square w-full h-full object-cover group-hover:scale-105 duration-[350ms]"
+                      src={item.media_url}
+                      alt={item.caption}
+                      height="480"
+                      width="480"
+                      sizes="(max-width: 600px) 280px, 480px"
+                      layout="responsive"
+                      objectFit="cover"
+                    />
+                  </div>
 
-                <div className="text-center mb-4 lg:mb-0">
-                  <p>{item.text}</p>
-                </div>
-              </button>
+                  <div className="text-center mb-4 lg:mb-0">
+                    <p>{item.text}</p>
+                  </div>
+                </button>
+              </li>
             ))}
           </ul>
         </MobileOverflow>
