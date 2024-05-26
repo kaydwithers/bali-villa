@@ -39,7 +39,7 @@ const information: IInformation[] = [
           <ul className="flex flex-col gap-y-2">
             <li>
               <a
-                className="flex items-center gap-x-1 text-white"
+                className="inline-flex items-center gap-x-1 text-white"
                 href="https://maps.app.goo.gl/CeJkYqy1KEqWFUaL7"
                 target="_blank"
               >
@@ -52,7 +52,7 @@ const information: IInformation[] = [
             </li>
             <li>
               <a
-                className="flex items-center gap-x-1 text-white"
+                className="inline-flex items-center gap-x-1 text-white"
                 href="https://maps.app.goo.gl/tquPTd9yyxFd3SvRA"
                 target="_blank"
               >
@@ -65,7 +65,7 @@ const information: IInformation[] = [
             </li>
             <li>
               <a
-                className="flex items-center gap-x-1 text-white"
+                className="inline-flex items-center gap-x-1 text-white"
                 href="https://maps.app.goo.gl/saDrzaQsjiurfYtd7"
                 target="_blank"
               >
@@ -78,7 +78,7 @@ const information: IInformation[] = [
             </li>
             <li>
               <a
-                className="flex items-center gap-x-1 text-white"
+                className="inline-flex items-center gap-x-1 text-white"
                 href="https://maps.app.goo.gl/VRMafzV855gaEyXK8"
                 target="_blank"
               >
@@ -99,11 +99,11 @@ const information: IInformation[] = [
           <ul className="flex flex-col gap-y-2">
             <li>
               <a
-                className="flex items-center gap-x-1 text-white"
+                className="inline-flex items-center gap-x-1 text-white"
                 href="https://maps.app.goo.gl/XgHFaTvzwthxafMB6"
                 target="_blank"
               >
-                Finn&lsquo;s at Uluwatu
+                Finn&rsquo;s at Uluwatu
                 <ArrowUpRightIcon
                   className="inline-block h-4 w-4"
                   title="Opens in new tab"
@@ -112,7 +112,7 @@ const information: IInformation[] = [
             </li>
             <li>
               <a
-                className="flex items-center gap-x-1 text-white"
+                className="inline-flex items-center gap-x-1 text-white"
                 href="https://maps.app.goo.gl/hkGmwQ2pedumMTwx7"
                 target="_blank"
               >
@@ -125,7 +125,7 @@ const information: IInformation[] = [
             </li>
             <li>
               <a
-                className="flex items-center gap-x-1 text-white"
+                className="inline-flex items-center gap-x-1 text-white"
                 href="https://maps.app.goo.gl/KaZCHpcrfTEwev6x7"
                 target="_blank"
               >
@@ -138,7 +138,7 @@ const information: IInformation[] = [
             </li>
             <li>
               <a
-                className="flex items-center gap-x-1 text-white"
+                className="inline-flex items-center gap-x-1 text-white"
                 href="https://maps.app.goo.gl/g5dnVuwSLKnFNb5y6"
                 target="_blank"
               >
@@ -151,7 +151,7 @@ const information: IInformation[] = [
             </li>
             <li>
               <a
-                className="flex items-center gap-x-1 text-white"
+                className="inline-flex items-center gap-x-1 text-white"
                 href="https://maps.app.goo.gl/2XjDXdRyoXomFUJS7"
                 target="_blank"
               >
@@ -170,9 +170,47 @@ const information: IInformation[] = [
             <strong className="font-semibold">Sports</strong>
           </h4>
           <ul className="flex flex-col gap-y-2">
-            <li>Tee off at New Kuta Golf</li>
+            <li>
+              Tee off at{" "}
+              <a
+                className="inline-flex items-center gap-x-1 text-white"
+                href="https://maps.app.goo.gl/kvtAdyqBpMrr2TCc7"
+                target="_blank"
+              >
+                New Kuta Golf
+                <ArrowUpRightIcon
+                  className="inline-block h-4 w-4"
+                  title="Opens in new tab"
+                />
+              </a>
+            </li>
             <li>Catch a wave with surfing lessons at Dreamland Beach</li>
-            <li>Get fit at Bambu Fitness or CrossFit Uluwatu</li>
+            <li>
+              Get fit at{" "}
+              <a
+                className="inline-flex items-center gap-x-1 text-white"
+                href="https://maps.app.goo.gl/dhzBXsJXWYZ2RAao9"
+                target="_blank"
+              >
+                Bambu Fitness
+                <ArrowUpRightIcon
+                  className="inline-block h-4 w-4"
+                  title="Opens in new tab"
+                />
+              </a>{" "}
+              or{" "}
+              <a
+                className="inline-flex items-center gap-x-1 text-white"
+                href="https://maps.app.goo.gl/3GGQ6u3VMTaChFWbA"
+                target="_blank"
+              >
+                CrossFit Uluwatu
+                <ArrowUpRightIcon
+                  className="inline-block h-4 w-4"
+                  title="Opens in new tab"
+                />
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -192,9 +230,46 @@ const information: IInformation[] = [
             <strong className="font-semibold">Breakfast</strong>
           </h4>
           <ul className="flex flex-col gap-y-2">
-            <li>Enjoy a delightful morning at Tarabelle</li>
-            <li>% Coffee</li>
-            <li>Frencha Cafe.</li>
+            <li>
+              Enjoy a delightful morning at{" "}
+              <a
+                className="inline-flex items-center gap-x-1 text-white"
+                href="https://maps.app.goo.gl/rqTyHygU426N7V1Y7"
+                target="_blank"
+              >
+                Tarabelle
+                <ArrowUpRightIcon
+                  className="inline-block h-4 w-4"
+                  title="Opens in new tab"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                className="inline-flex items-center gap-x-1 text-white"
+                href="https://maps.app.goo.gl/8kdvvYHiztfUL68x5"
+                target="_blank"
+              >
+                % Arabica Coffee
+                <ArrowUpRightIcon
+                  className="inline-block h-4 w-4"
+                  title="Opens in new tab"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                className="inline-flex items-center gap-x-1 text-white"
+                href="https://maps.app.goo.gl/imD85ntZe2Ms3VD6A"
+                target="_blank"
+              >
+                Fren&rsquo;cha Bakery
+                <ArrowUpRightIcon
+                  className="inline-block h-4 w-4"
+                  title="Opens in new tab"
+                />
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -203,8 +278,46 @@ const information: IInformation[] = [
             <strong className="font-semibold">Lunch</strong>
           </h4>
           <ul className="flex flex-col gap-y-2">
-            <li>Savor local flavors at Warung Local or Warung De Dusun</li>
-            <li>Indulge in fresh seafood at the Jimbaran Fish Market</li>
+            <li>
+              Savor local flavors at{" "}
+              <a
+                className="inline-flex items-center gap-x-1 text-white"
+                href="https://maps.app.goo.gl/ZoSiWRrqzargcTuh8"
+                target="_blank"
+              >
+                Warung Local
+                <ArrowUpRightIcon
+                  className="inline-block h-4 w-4"
+                  title="Opens in new tab"
+                />
+              </a>{" "}
+              or{" "}
+              <a
+                className="inline-flex items-center gap-x-1 text-white"
+                href="https://maps.app.goo.gl/bi4d8Yf9MGny2fUL6"
+                target="_blank"
+              >
+                Waroeng De Dusun
+                <ArrowUpRightIcon
+                  className="inline-block h-4 w-4"
+                  title="Opens in new tab"
+                />
+              </a>
+            </li>
+            <li>
+              Indulge in fresh seafood at the{" "}
+              <a
+                className="inline-flex items-center gap-x-1 text-white"
+                href="https://maps.app.goo.gl/ERSKuhuDSNd3SxxEA"
+                target="_blank"
+              >
+                Jimbaran Fish Market
+                <ArrowUpRightIcon
+                  className="inline-block h-4 w-4"
+                  title="Opens in new tab"
+                />
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -213,9 +326,34 @@ const information: IInformation[] = [
             <strong className="font-semibold">Dinner</strong>
           </h4>
           <ul className="flex flex-col gap-y-2">
-            <li>Treat yourself to culinary excellence at Cuca</li>
-            <li>Feast on seafood at Jimbaran Seafood Restaurant</li>
-            <li>Experience the magic of Abracadabra Restaurant</li>
+            <li>
+              Treat yourself to culinary excellence at{" "}
+              <a
+                className="inline-flex items-center gap-x-1 text-white"
+                href="https://maps.app.goo.gl/dTPMq1xdB7d8T2R97"
+                target="_blank"
+              >
+                Cuca
+                <ArrowUpRightIcon
+                  className="inline-block h-4 w-4"
+                  title="Opens in new tab"
+                />
+              </a>
+            </li>
+            <li>
+              Experience the magic of{" "}
+              <a
+                className="inline-flex items-center gap-x-1 text-white"
+                href="https://maps.app.goo.gl/GLPBm25gsKgFJoqdA"
+                target="_blank"
+              >
+                Abracadabra Restaurant
+                <ArrowUpRightIcon
+                  className="inline-block h-4 w-4"
+                  title="Opens in new tab"
+                />
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -250,7 +388,7 @@ const information: IInformation[] = [
 
             <li>
               <strong className="font-semibold">Mosquito Protection:</strong>{" "}
-              Because Bali is a tropical paradise, we&lsquo;ve got you covered
+              Because Bali is a tropical paradise, we&rsquo;ve got you covered
               with mosquito repellents in every room. Feel free to use either
               the electric ones or the lotion to keep those pesky bugs at bay.
             </li>
@@ -258,14 +396,14 @@ const information: IInformation[] = [
             <li>
               <strong className="font-semibold">Night Sounds:</strong> You might
               hear the distinctive call of geckos around our area at night. But
-              don&lsquo;t worry, they&lsquo;re just outside the villa and
-              won&lsquo;t come in.
+              don&rsquo;t worry, they&rsquo;re just outside the villa and
+              won&rsquo;t come in.
             </li>
 
             <li>
               <strong className="font-semibold">Chirping Crickets:</strong>{" "}
-              Another common night time sound you&lsquo;ll encounter here is the
-              soothing chirping of crickets. It&lsquo;s all part of the tropical
+              Another common night time sound you&rsquo;ll encounter here is the
+              soothing chirping of crickets. It&rsquo;s all part of the tropical
               symphony!
             </li>
 
