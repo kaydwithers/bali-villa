@@ -32,7 +32,7 @@ export const Cta = () => {
     <Layout>
       <div className="motion-safe:animate-bounce flex justify-center">
         <div className="w-80">
-          <Button isExternal size="large" clickHandler={clickHandler}>
+          <Button size="large" clickHandler={clickHandler}>
             Book now
             <ArrowUpRightIcon
               className="inline-block h-4 w-4"

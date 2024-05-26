@@ -171,11 +171,7 @@ export const Header = () => {
                             ))}
 
                             <li className="mt-4">
-                              <Button
-                                href="https://www.airbnb.com.au/rooms/1157674003167983926"
-                                isExternal
-                                clickHandler={clickHandler}
-                              >
+                              <Button clickHandler={clickHandler}>
                                 Book now
                                 <ArrowUpRightIcon
                                   className="inline-block h-4 w-4"
