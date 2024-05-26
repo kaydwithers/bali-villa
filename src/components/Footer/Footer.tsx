@@ -66,7 +66,7 @@ export const Footer = () => {
               >
                 Jl. Villa Airis. <br />
                 GG Bunga Mekar No.3, <br />
-                Unggasan — Pecatu, Uluwatu{" "}
+                Ungasan — Pecatu, Uluwatu{" "}
                 <ArrowUpRightIcon
                   className="inline-block h-4 w-4"
                   title="Opens in new tab"
