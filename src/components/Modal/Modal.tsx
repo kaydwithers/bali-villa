@@ -37,7 +37,7 @@ export const Modal = ({ children, isOpen, onClose }: IModal) => {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-full relative max-w-screen-2xl transform overflow-hidden bg-primary rounded-2xl text-left align-middle shadow-xl transition-all">
-                  <div className="absolute right-0 top-0 mr-4 mt-4">
+                  <div className="absolute right-0 top-0 mr-4 mt-4 z-10">
                     <button
                       type="button"
                       className="bg-white hover:bg-white/75 text-black rounded-full p-2"

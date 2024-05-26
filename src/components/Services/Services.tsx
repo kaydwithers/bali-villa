@@ -48,9 +48,11 @@ const services: Array<IItem> = [
 const Tile = ({ item }: ITile) => {
   return (
     <div className="bg-white/5 rounded-xl overflow-hidden w-[65vw] lg:w-auto mb-4 lg:mb-0">
-      <div className="">
+      <div className="relative aspect-square">
+        <div className="animate-pulse absolute inset-0 bg-white/10"></div>
+
         <Image
-          className="w-full h-full object-cover aspect-square"
+          className="absolute inset-0 w-full h-full object-cover aspect-square"
           src={item.media.media_url}
           alt={item.media.caption}
           height="480"

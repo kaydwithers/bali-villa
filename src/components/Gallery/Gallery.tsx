@@ -167,13 +167,15 @@ const MyTabPanel = ({ items }: ITabs) => {
           <ul className="flex lg:grid gap-6 lg:gap-12 lg:grid-cols-3 lg:w-full">
             {items.map((item) => (
               <button
-                className="aspect-square group w-[65vw] lg:w-auto"
+                className="group w-[65vw] lg:w-auto"
                 key={item.id}
                 onClick={() => handleModal(item.id)}
               >
-                <div className="overflow-hidden rounded-xl mb-4 bg-white/10">
+                <div className="relative aspect-square overflow-hidden rounded-xl mb-4">
+                  <div className="animate-pulse absolute inset-0 bg-white/10"></div>
+
                   <Image
-                    className="w-full h-full aspect-square object-cover group-hover:scale-105 duration-[350ms]"
+                    className="absolute inset-0 aspect-square w-full h-full object-cover group-hover:scale-105 duration-[350ms]"
                     src={item.media_url}
                     alt={item.caption}
                     height="480"
@@ -194,16 +196,20 @@ const MyTabPanel = ({ items }: ITabs) => {
       </Tab.Panel>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <Image
-          className="w-full h-full object-cover aspect-video"
-          src={activeMedia.media_url}
-          alt={activeMedia.caption}
-          height="1536"
-          width="864"
-          sizes="(max-width: 600px) 480px, 1560px"
-          layout="responsive"
-          objectFit="cover"
-        />
+        <div className="relative aspect-video">
+          <div className="animate-pulse absolute inset-0 aspect-video bg-white/10"></div>
+
+          <Image
+            className="absolute inset-0 w-full h-full object-cover aspect-video"
+            src={activeMedia.media_url}
+            alt={activeMedia.caption}
+            height="1536"
+            width="864"
+            sizes="(max-width: 600px) 480px, 1560px"
+            layout="responsive"
+            objectFit="cover"
+          />
+        </div>
       </Modal>
     </>
   );
