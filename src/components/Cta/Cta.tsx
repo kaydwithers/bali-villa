@@ -6,7 +6,7 @@ import React from "react";
 export const Cta = () => {
   return (
     <Layout>
-      <div className="flex justify-center">
+      <div className="motion-safe:animate-bounce flex justify-center">
         <div className="w-80">
           <Button
             href="https://www.airbnb.com.au/rooms/1157674003167983926"

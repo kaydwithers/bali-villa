@@ -18,7 +18,7 @@ export const Button = ({
   const sizeClasses = {
     small: "px-4 py-2 text-sm",
     medium: "px-8 py-4 text-base",
-    large: "px-8 py-4 lg:px-12 lg:py-6 text-base lg:text-xl",
+    large: "px-9 py-5 lg:px-12 lg:py-6 text-base lg:text-xl",
   };
 
   const sizeClass = sizeClasses[size];
