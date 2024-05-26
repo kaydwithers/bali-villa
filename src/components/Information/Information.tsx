@@ -290,8 +290,8 @@ export const Information = () => {
           alt="Luxury pool at Nirav Villa in Uluwatu, Bali."
           height="0"
           width="0"
-          sizes="50vw"
-          priority
+          sizes="(max-width: 600px) 100vw, 50vw"
+          objectFit="cover"
         />
       </div>
 

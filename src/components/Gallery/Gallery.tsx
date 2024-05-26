@@ -173,13 +173,14 @@ const MyTabPanel = ({ items }: ITabs) => {
               >
                 <div className="overflow-hidden rounded-xl mb-4 bg-white/10">
                   <Image
-                    className="w-full h-full object-cover aspect-square group-hover:scale-105 duration-[350ms]"
+                    className="w-full h-full aspect-square object-cover group-hover:scale-105 duration-[350ms]"
                     src={item.media_url}
                     alt={item.caption}
-                    height="0"
-                    width="0"
-                    sizes="30vw"
-                    priority
+                    height="480"
+                    width="480"
+                    sizes="(max-width: 600px) 280px, 480px"
+                    layout="responsive"
+                    objectFit="cover"
                   />
                 </div>
 
@@ -197,10 +198,11 @@ const MyTabPanel = ({ items }: ITabs) => {
           className="w-full h-full object-cover aspect-video"
           src={activeMedia.media_url}
           alt={activeMedia.caption}
-          height="0"
-          width="0"
-          sizes="100vw"
-          priority
+          height="1536"
+          width="864"
+          sizes="(max-width: 600px) 480px, 1560px"
+          layout="responsive"
+          objectFit="cover"
         />
       </Modal>
     </>

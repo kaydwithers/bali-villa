@@ -53,10 +53,11 @@ const Tile = ({ item }: ITile) => {
           className="w-full h-full object-cover aspect-square"
           src={item.media.media_url}
           alt={item.media.caption}
-          height="0"
-          width="0"
-          sizes="20vw"
-          priority
+          height="480"
+          width="480"
+          sizes="(max-width: 600px) 280px, 480px"
+          layout="responsive"
+          objectFit="cover"
         />
       </div>
 

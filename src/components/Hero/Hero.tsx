@@ -28,6 +28,8 @@ export const Hero = () => {
               height="0"
               width="0"
               sizes="100vw"
+              layout="responsive"
+              objectFit="cover"
               priority
             />
 
