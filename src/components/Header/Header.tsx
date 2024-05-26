@@ -38,11 +38,11 @@ export const menuItems: IMenuItems[] = [
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleMenuClick = () => {
+  const menuClickHandler = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleLocaleSelect = () => {};
+  const localeSelectHandler = () => {};
 
   const event = ({ action, category, label, value }: any) => {
     (window as any).gtag("event", action, {
@@ -52,7 +52,15 @@ export const Header = () => {
     });
   };
 
-  const clickHandler = () => {
+  const handleWhatsAppClick = () => {
+    event({
+      action: "whatsapp_header_link",
+      category: "ecommerce",
+      label: "WhatsApp header link clicked",
+    });
+  };
+
+  const bookNowHandler = () => {
     event({
       action: "book_now_header_button",
       category: "ecommerce",
@@ -82,12 +90,12 @@ export const Header = () => {
 
           {/* 
           @TODO: Add translations.
-          <button onClick={handleLocaleSelect}>
+          <button onClick={localeSelectHandler}>
             <span className="fi fi-id"></span>
           </button>
           */}
 
-          <Button clickHandler={clickHandler}>
+          <Button clickHandler={bookNowHandler}>
             Book now
             <ArrowUpRightIcon
               className="inline-block h-4 w-4"
@@ -97,7 +105,7 @@ export const Header = () => {
         </div>
 
         <div className="block lg:hidden">
-          <button aria-label="Open menu" onClick={handleMenuClick}>
+          <button aria-label="Open menu" onClick={menuClickHandler}>
             <Bars3Icon className="inline-block h-8 w-8" role="presentation" />
           </button>
 
@@ -105,7 +113,7 @@ export const Header = () => {
             <Dialog
               as="div"
               className="fixed inset-0 z-10 overflow-hidden"
-              onClose={handleMenuClick}
+              onClose={menuClickHandler}
             >
               <div className="absolute inset-0 overflow-hidden">
                 <Transition.Child
@@ -143,7 +151,7 @@ export const Header = () => {
                                 aria-label="Close menu"
                                 type="button"
                                 className="rounded-md"
-                                onClick={handleMenuClick}
+                                onClick={menuClickHandler}
                               >
                                 <XMarkIcon
                                   className="h-6 w-6"
@@ -160,7 +168,7 @@ export const Header = () => {
                               <li className="text-xl" key={item.id}>
                                 <a
                                   href={item.href ? item.href : `#${item.id}`}
-                                  onClick={handleMenuClick}
+                                  onClick={menuClickHandler}
                                 >
                                   {item.text}
                                 </a>
@@ -171,7 +179,8 @@ export const Header = () => {
                               <a
                                 aria-label="WhatsApp messenger"
                                 className="flex items-center gap-x-4"
-                                href="tel:+62 82265 1346"
+                                href="https://wa.me/+6281222651346?text=Hi%20Nirav%20Villa"
+                                onClick={handleWhatsAppClick}
                               >
                                 <svg
                                   className="w-8 h-8"
@@ -187,7 +196,7 @@ export const Header = () => {
                             </li>
 
                             <li className="mt-4">
-                              <Button clickHandler={clickHandler}>
+                              <Button clickHandler={bookNowHandler}>
                                 Book now
                                 <ArrowUpRightIcon
                                   className="inline-block h-4 w-4"

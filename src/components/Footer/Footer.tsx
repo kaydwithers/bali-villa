@@ -13,7 +13,15 @@ export const Footer = () => {
     });
   };
 
-  const clickHandler = () => {
+  const handleWhatsAppClick = () => {
+    event({
+      action: "whatsapp_footer_link",
+      category: "ecommerce",
+      label: "WhatsApp footer link clicked",
+    });
+  };
+
+  const bookNowHandler = () => {
     event({
       action: "google_maps_link",
       label: "Google Maps link clicked",
@@ -56,7 +64,8 @@ export const Footer = () => {
               <a
                 aria-label="WhatsApp messenger"
                 className="flex items-center gap-x-4"
-                href="tel:+62 82265 1346"
+                href="https://wa.me/+6281222651346?text=Hi%20Nirav%20Villa"
+                onClick={handleWhatsAppClick}
               >
                 <svg
                   className="w-6 h-6"
@@ -79,7 +88,7 @@ export const Footer = () => {
                 className="cursor-pointer"
                 target="_blank"
                 rel="noopener,noreferrer"
-                onClick={clickHandler}
+                onClick={bookNowHandler}
               >
                 Jl. Villa Airis. <br />
                 GG Bunga Mekar No.3, <br />
