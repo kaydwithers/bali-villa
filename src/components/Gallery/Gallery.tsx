@@ -182,7 +182,6 @@ const MyTabPanel = ({ items }: ITabs) => {
                       width="480"
                       sizes="(max-width: 600px) 280px, 480px"
                       layout="responsive"
-                      objectFit="cover"
                     />
                   </div>
 
@@ -208,7 +207,6 @@ const MyTabPanel = ({ items }: ITabs) => {
             width="864"
             sizes="(max-width: 600px) 480px, 1560px"
             layout="responsive"
-            objectFit="cover"
           />
         </div>
       </Modal>

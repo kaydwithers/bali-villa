@@ -1,7 +1,10 @@
+"use client";
+
 import { ReactNode } from "react";
 
 interface IButton {
   children: ReactNode;
+  clickHandler?: () => void;
   href?: string;
   isExternal?: boolean;
   size?: "small" | "medium" | "large";
@@ -10,6 +13,7 @@ interface IButton {
 
 export const Button = ({
   children,
+  clickHandler,
   href,
   isExternal,
   size = "medium",
@@ -36,7 +40,11 @@ export const Button = ({
       {children}
     </a>
   ) : (
-    <button className={`${classes} ${sizeClass}`} type={type}>
+    <button
+      className={`${classes} ${sizeClass}`}
+      type={type}
+      onClick={clickHandler}
+    >
       {children}
     </button>
   );

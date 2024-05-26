@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
 import "./globals.css";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
@@ -17,6 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleAnalytics />
       <body className="bg-primary">
         <div id="modal-root"></div>
         {children}

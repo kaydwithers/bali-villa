@@ -429,7 +429,6 @@ export const Information = () => {
           height="0"
           width="0"
           sizes="(max-width: 600px) 100vw, 50vw"
-          objectFit="cover"
         />
       </div>
 

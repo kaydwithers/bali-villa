@@ -59,7 +59,6 @@ const Tile = ({ item }: ITile) => {
           width="480"
           sizes="(max-width: 600px) 280px, 480px"
           layout="responsive"
-          objectFit="cover"
         />
       </div>
 
