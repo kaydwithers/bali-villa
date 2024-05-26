@@ -166,10 +166,9 @@ const MyTabPanel = ({ items }: ITabs) => {
         <MobileOverflow>
           <ul className="flex lg:grid gap-6 lg:gap-12 lg:grid-cols-3 lg:w-full">
             {items.map((item) => (
-              <li className="w-[65vw] lg:w-auto">
+              <li className="w-[65vw] lg:w-auto" key={item.id}>
                 <button
                   className="group w-full"
-                  key={item.id}
                   onClick={() => handleModal(item.id)}
                 >
                   <div className="relative aspect-square overflow-hidden rounded-xl mb-4">
