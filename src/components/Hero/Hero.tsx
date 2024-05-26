@@ -14,7 +14,7 @@ export const Hero = () => {
               loop
               muted
               className="w-full h-[90vh] object-cover bg-white/10"
-              poster="/image/hero-mobile.JPG"
+              poster="/image/hero-mobile.webp"
             >
               <source src="/video/hero.mp4" type="video/mp4" />
             </video>
@@ -26,7 +26,7 @@ export const Hero = () => {
 
               <Image
                 className="absolute inset-0 w-full h-full object-cover bg-white/10"
-                src="/image/hero.JPG"
+                src="/image/hero.webp"
                 alt="Luxury lounge room with Netflix and pool at Nirav Villa in Uluwatu, Bali."
                 height="0"
                 width="0"

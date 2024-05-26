@@ -424,7 +424,7 @@ export const Information = () => {
       <div className="h-96 lg:h-screen w-full lg:w-[50vw]">
         <Image
           className="w-full h-full object-cover"
-          src="/image/information.JPG"
+          src="/image/information.webp"
           alt="Luxury pool at Nirav Villa in Uluwatu, Bali."
           height="0"
           width="0"
