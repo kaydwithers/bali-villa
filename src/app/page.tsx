@@ -1,4 +1,3 @@
-import { Contact } from "../components/Contact/Contact";
 import { Cta } from "../components/Cta/Cta";
 import { Footer } from "../components/Footer/Footer";
 import { Gallery } from "../components/Gallery/Gallery";
@@ -7,7 +6,6 @@ import { Hero } from "../components/Hero/Hero";
 import { Information } from "../components/Information/Information";
 import { Map } from "../components/Map/Map";
 import { Services } from "../components/Services/Services";
-import { SocialMedia } from "../components/SocialMedia/SocialMedia";
 import { Testimonials } from "../components/Testimonials/Testimonials";
 
 import type { Metadata } from "next";
