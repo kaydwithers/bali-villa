@@ -1,16 +1,9 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import GoogleAnalytics from "@/components/GoogleAnalytics/GoogleAnalytics";
 import "./globals.css";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Nirav Private Bali Villa Uluwatu",
-  description: "Best Private Bali Villa in Uluwatu",
-  metadataBase: new URL("https://niravvillabali.com/"),
-};
 
 export default function RootLayout({
   children,
