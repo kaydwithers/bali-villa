@@ -42,7 +42,7 @@ export const Testimonials = () => {
       <Heading>Reviews</Heading>
 
       <MobileOverflow>
-        <div className="flex gap-x-6 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:w-full">
+        <div className="flex gap-x-8 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:w-full">
           {testimonials.map((testimonial) => (
             <div
               className="flex flex-col items-center text-center gap-y-8 mb-4 lg:mb-0 w-[65vw] lg:w-auto"
@@ -51,7 +51,7 @@ export const Testimonials = () => {
               <div className="flex flex-col text-center gap-y-6 h-full">
                 {testimonial.contents.map((item, index) => (
                   <p
-                    className="text-base lg:text-xl/8 max-w-prose h-full"
+                    className="text-base lg:text-xl/8 max-w-prose h-full text-pretty"
                     key={index}
                   >
                     {item}
