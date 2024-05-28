@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Nirav Private Bali Villa Uluwatu",
   description: "Best Private Bali Villa in Uluwatu",
+  metadataBase: new URL("https://niravvillabali.com/"),
 };
 
 export default function RootLayout({
