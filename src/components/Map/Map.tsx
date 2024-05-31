@@ -12,9 +12,10 @@ export const Map = () => {
       version: "weekly",
     });
 
-    const { Map } = await loader.importLibrary("maps");
-
-    const { AdvancedMarkerElement } = (await loader.importLibrary(
+    const { Map } = (await google.maps.importLibrary(
+      "maps",
+    )) as google.maps.MapsLibrary;
+    const { AdvancedMarkerElement, PinElement } = (await loader.importLibrary(
       "marker",
     )) as google.maps.MarkerLibrary;
 
@@ -31,9 +32,15 @@ export const Map = () => {
 
     const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
 
+    const pinBackground = new PinElement({
+      background: "#4F46E5", // indigo-600
+    });
+
     const marker = new AdvancedMarkerElement({
       map,
       position,
+      title: "Nirav Villa",
+      content: pinBackground.element,
     });
   };
 
