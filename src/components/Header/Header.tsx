@@ -10,7 +10,6 @@ import {
   Dialog,
   DialogPanel,
   DialogTitle,
-  DialogOverlay,
   Transition,
   TransitionChild,
 } from "@headlessui/react";
@@ -133,7 +132,7 @@ export const Header = () => {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  <DialogOverlay className="absolute inset-0 bg-black/75 transition-opacity"></DialogOverlay>
+                  <div className="absolute inset-0 bg-black/75 transition-opacity" />
                 </TransitionChild>
 
                 <div className="pointer-events-none fixed inset-y-0 flex max-w-full left-0 pr-10">
@@ -146,7 +145,7 @@ export const Header = () => {
                     leaveFrom="translate-x-0"
                     leaveTo="-translate-x-full"
                   >
-                    <div className="pointer-events-auto w-screen max-w-md">
+                    <DialogPanel className="pointer-events-auto w-screen max-w-md">
                       <div className="flex h-full flex-col overflow-y-scroll bg-primary py-6 shadow-xl">
                         <div className="px-6">
                           <div className="flex items-start justify-between">
@@ -215,7 +214,7 @@ export const Header = () => {
                           </ul>
                         </div>
                       </div>
-                    </div>
+                    </DialogPanel>
                   </TransitionChild>
                 </div>
               </div>
