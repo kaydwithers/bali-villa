@@ -5,7 +5,15 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
-import { Dialog, Transition } from "@headlessui/react";
+// import { Dialog, Transition } from "@headlessui/react";
+import {
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+  DialogOverlay,
+  Transition,
+  TransitionChild,
+} from "@headlessui/react";
 import { Button } from "../Button/Button";
 import { Fragment, useState } from "react";
 import { Layout } from "../Layout/Layout";
@@ -116,7 +124,7 @@ export const Header = () => {
               onClose={menuClickHandler}
             >
               <div className="absolute inset-0 overflow-hidden">
-                <Transition.Child
+                <TransitionChild
                   as={Fragment}
                   enter="ease-in-out duration-500"
                   enterFrom="opacity-0"
@@ -125,11 +133,11 @@ export const Header = () => {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  <Dialog.Overlay className="absolute inset-0 bg-black/75 transition-opacity"></Dialog.Overlay>
-                </Transition.Child>
+                  <DialogOverlay className="absolute inset-0 bg-black/75 transition-opacity"></DialogOverlay>
+                </TransitionChild>
 
                 <div className="pointer-events-none fixed inset-y-0 flex max-w-full left-0 pr-10">
-                  <Transition.Child
+                  <TransitionChild
                     as={Fragment}
                     enter="transform transition ease-in-out duration-500 sm:duration-700"
                     enterFrom="-translate-x-full"
@@ -142,9 +150,9 @@ export const Header = () => {
                       <div className="flex h-full flex-col overflow-y-scroll bg-primary py-6 shadow-xl">
                         <div className="px-6">
                           <div className="flex items-start justify-between">
-                            <Dialog.Title className="text-xl lg:text-2xl tracking-[0.2em] font-semibold uppercase">
+                            <DialogTitle className="text-xl lg:text-2xl tracking-[0.2em] font-semibold uppercase">
                               <Logo />
-                            </Dialog.Title>
+                            </DialogTitle>
 
                             <div className="flex h-7 items-center">
                               <button
@@ -208,7 +216,7 @@ export const Header = () => {
                         </div>
                       </div>
                     </div>
-                  </Transition.Child>
+                  </TransitionChild>
                 </div>
               </div>
             </Dialog>
