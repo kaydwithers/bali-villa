@@ -40,8 +40,8 @@ export const Map = () => {
     const marker = new AdvancedMarkerElement({
       map,
       position,
-      title: "Nirav Villa",
-      content: pinBackground.element,
+      // title: "Nirav Villa",
+      // content: pinBackground.element,
     });
   };
 
