@@ -84,7 +84,7 @@ export const Footer = () => {
           <div className="">
             <p>
               <a
-                href="https://maps.app.goo.gl/iXzQbtqXC9brTowKA"
+                href="https://maps.app.goo.gl/kdBExCZ9axjVnHp36"
                 className="cursor-pointer"
                 target="_blank"
                 rel="noopener,noreferrer"

@@ -19,8 +19,8 @@ export const Map = () => {
     )) as google.maps.MarkerLibrary;
 
     const position = {
-      lat: -8.8290845,
-      lng: 115.1411562,
+      lat: -8.8290831,
+      lng: 115.140647,
     };
 
     const mapOptions: google.maps.MapOptions = {
