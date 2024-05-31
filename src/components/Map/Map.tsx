@@ -12,9 +12,10 @@ export const Map = () => {
       version: "weekly",
     });
 
-    const { Map } = (await google.maps.importLibrary(
+    const { Map } = (await loader.importLibrary(
       "maps",
     )) as google.maps.MapsLibrary;
+
     const { AdvancedMarkerElement, PinElement } = (await loader.importLibrary(
       "marker",
     )) as google.maps.MarkerLibrary;
